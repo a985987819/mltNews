@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "latest": "2026-11-16",
+  "dates": [
+    "2026-11-16"
+  ],
+  "sectorOrder": [
+    "politics",
+    "finance",
+    "ai",
+    "optical",
+    "dev",
+    "security",
+    "machinery",
+    "chemical"
+  ],
+  "sectorNames": {
+    "politics": "时政",
+    "finance": "金融",
+    "ai": "AI",
+    "optical": "光通信",
+    "dev": "软件开发",
+    "security": "网络安全",
+    "machinery": "工程机械",
+    "chemical": "化工"
+  }
+}

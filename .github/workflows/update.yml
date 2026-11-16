@@ -1,0 +1,58 @@
+name: Update News
+
+on:
+  schedule:
+    - cron: '0 0 * * *'        # UTC 00:00 = 北京时间 08:00
+  workflow_dispatch:            # 支持手动触发
+
+permissions:
+  contents: write               # 需要 push 数据文件
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install deps
+        run: npm ci --prefix scripts || npm install --prefix scripts
+
+      - name: Fetch news
+        run: node scripts/fetch.mjs
+
+      - name: Commit data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/public/data
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore(data): update $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Build site
+        run: |
+          npm ci --prefix web
+          npm run build --prefix web
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+  deploy:
+    needs: fetch
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

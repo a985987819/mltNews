@@ -1,0 +1,9 @@
+{
+  "name": "mltnews-scripts",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "yaml": "^2.6.1"
+  }
+}

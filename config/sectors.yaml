@@ -1,0 +1,120 @@
+# ─────────────────────────────────────────────
+# 行业热点新闻聚合站 · 板块抓取配置
+# 这是用户唯一需要维护的文件。改动此文件后，下次 Actions 运行（北京时间每天 08:00）即生效。
+# ─────────────────────────────────────────────
+global:
+  per_sector: 10          # 每板块最终条数
+  history_days: 30        # 保留多少天历史
+  request_delay_ms: 800   # 请求间隔（串行，不并发）
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+
+# 兜底数据池（规格 3.4），所有板块共用，每次抓取只拉一次
+fallback_pool:
+  - cls
+  - wallstreetcn
+  - 36kr-quick
+  - thepaper
+
+# ── 源类型说明（规格 5.2）─────────────────────────────
+#   newsnow : 调 NewsNow 公开 API 取热榜
+#   html    : 抓静态列表页，用 article_regex 提文章链接（字段按 groups 映射取，禁止硬编码下标）
+#   keyword : 从 fallback_pool 的合并结果里按关键词筛，纯内存过滤，不产生额外请求
+# 板块级可选字段：
+#   priority_keywords : 命中者置顶（排序时优先于时间）
+# ─────────────────────────────────────────────────
+
+sectors:
+  - key: politics
+    name: 时政
+    keywords: [国务院, 政治局, 发改委, 工信部, 政策, 会议, 规划, 白皮书]
+    sources:
+      - type: newsnow
+        id: thepaper
+        limit: 10
+      - type: newsnow
+        id: cankaoxiaoxi
+        limit: 6
+
+  - key: finance
+    name: 金融
+    keywords: [央行, 降准, 降息, 社融, LPR, 国债, 汇率, 股市, 监管, 银行, 券商]
+    sources:
+      - type: newsnow
+        id: cls-hot
+        limit: 10
+      - type: newsnow
+        id: wallstreetcn-hot
+        limit: 6
+      - type: newsnow
+        id: jin10
+        limit: 6
+
+  - key: ai
+    name: AI
+    keywords: [大模型, 多模态, Agent, 推理, 算力, GPU, 训练, 微调, RAG, 具身智能]
+    sources:
+      - type: newsnow
+        id: aihot
+        limit: 10
+      - type: newsnow
+        id: 36kr-quick
+        limit: 6
+
+  - key: optical
+    name: 光通信
+    keywords: [光模块, 光纤, 光通信, 光网络, 硅光, CPO, 800G, 1.6T, 光芯片, 光器件, 中际旭创, 新易盛, 天孚通信, 长飞]
+    sources:
+      - type: html
+        url: http://www.c-fol.net/
+        # 光纤在线首页：3 个捕获组（链接/14位时间戳/标题），文件名即发布时间
+        article_regex: >-
+          href=["'](\/\/www\.c-fol\.net\/news\/\d+_\d{6}\/(\d{14})\.html)["'][^>]*>([\s\S]{0,120}?)<\/a>
+        groups: {link: 1, time: 2, title: 3}
+        link_prefix: "http:"
+        time_format: "YYYYMMDDhhmmss"
+        limit: 10
+
+  - key: dev
+    name: 软件开发
+    keywords: [开源, 框架, 版本发布, 重构, 编程语言, 编译器, 数据库, 中间件, API]
+    sources:
+      - type: newsnow
+        id: juejin
+        limit: 10
+      - type: newsnow
+        id: v2ex
+        limit: 6
+      - type: newsnow
+        id: github-trending-today
+        limit: 6
+
+  - key: security
+    name: 网络安全
+    keywords: [漏洞, 勒索, 数据泄露, 网络攻击, APT, 零日, 供应链攻击, 等保, 攻防演练]
+    sources:
+      - type: newsnow
+        id: freebuf
+        limit: 10
+
+  - key: machinery
+    name: 工程机械
+    # 需求：优先柳工、三一重工的消息 → 命中 priority_keywords 的条目排在该板块最前面
+    priority_keywords: [柳工, 三一重工, 三一, 徐工机械, 中联重科]
+    keywords: [工程机械, 挖掘机, 起重机, 装载机, 混凝土机械, 卡特彼勒, 小松, 挖掘机销量, 开工小时数]
+    sources:
+      - type: keyword                            # ① 企业新闻优先（从兜底池筛，不发请求）
+        keywords: [柳工, 三一重工, 三一]
+        limit: 6
+      - type: html                               # ② 行业协会新闻补充
+        url: http://www.cncma.org/
+        # 协会首页：2 个捕获组（相对链接/标题），URL 无日期 → publishedAt 置 null
+        article_regex: >-
+          href=["'](?:https?:\/\/www\.cncma\.org\/)?(article\/\d+)["'][^>]*>([\s\S]{0,120}?)<\/a>
+        groups: {link: 1, title: 2}
+        link_prefix: "http://www.cncma.org/"
+        limit: 6
+
+  - key: chemical
+    name: 化工
+    keywords: [化工, 乙烯, 丙烯, 甲醇, 纯碱, 尿素, PTA, 乙二醇, 磷肥, 钾肥, 炼化, 石化, 万华化学, 荣盛石化]
+    sources: []          # 本版确定不配 HTML 源，只走关键词兜底（规格 3.3.3 已拍板）
