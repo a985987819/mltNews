@@ -4,6 +4,7 @@
 
 :root {
   color-scheme: light;
+  --topbar-h: 52px; /* 由 App 按实际顶栏高度动态覆盖（窄屏换行后会变高） */
   --bg: #f5f6f8;
   --panel: #ffffff;
   --hover-bg: #eef3fb;
@@ -204,7 +205,8 @@ select {
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: var(--shadow);
-  overflow: hidden;
+  /* clip 不产生滚动容器，栏头 sticky 才能生效（overflow: hidden 会破坏 sticky） */
+  overflow: clip;
 }
 
 .sector-head {
@@ -213,6 +215,11 @@ select {
   gap: 8px;
   padding: 10px 12px;
   border-bottom: 1px solid var(--border);
+  /* 吸顶：滚动时栏头贴在顶栏下方，长列表（尤其移动端单栏）滚动不迷路 */
+  position: sticky;
+  top: var(--topbar-h);
+  z-index: 5;
+  background: var(--panel);
 }
 
 .sector-name {
@@ -355,4 +362,52 @@ select {
   padding: 60px 20px;
   text-align: center;
   color: var(--muted);
+}
+
+/* ── 搜索命中反馈 ───────────────────────────── */
+.search-info {
+  padding: 6px 16px 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.item-title mark {
+  background: transparent;
+  color: var(--accent);
+  font-weight: 600;
+  padding: 0;
+}
+
+/* ── 操作舒适度：焦点可见、颜色过渡平滑 ───────── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-radius: 4px;
+}
+
+body,
+.topbar,
+.sector,
+.sector-head,
+.search,
+select,
+.btn,
+.news-item a,
+.degraded-tag {
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sk-line {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
 }

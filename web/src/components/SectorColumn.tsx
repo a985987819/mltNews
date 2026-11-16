@@ -4,9 +4,10 @@ import NewsItem from './NewsItem';
 interface Props {
   sectorKey: string;
   sector: SectorData;
+  query: string;
 }
 
-export default function SectorColumn({ sectorKey, sector }: Props) {
+export default function SectorColumn({ sectorKey, sector, query }: Props) {
   return (
     <section className="sector">
       <header className="sector-head">
@@ -23,7 +24,7 @@ export default function SectorColumn({ sectorKey, sector }: Props) {
       ) : (
         <ol className="sector-list">
           {sector.items.map((item, i) => (
-            <NewsItem key={`${sectorKey}-${i}`} item={item} rank={i + 1} />
+            <NewsItem key={`${sectorKey}-${i}`} item={item} rank={i + 1} query={query} />
           ))}
         </ol>
       )}
