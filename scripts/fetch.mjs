@@ -37,6 +37,32 @@ function writeJson(file, obj) {
   writeFileSync(file, JSON.stringify(obj, null, 2) + '\n', 'utf8');
 }
 
+// ── NewsNow 源的运行内缓存：每个 id 每次运行只发一次请求 ──
+// 同一源既是兜底池成员又是某板块主源（如 thepaper / 36kr-quick）时不重复请求；
+// 失败结果也缓存（本运行内不再重试，规格 12.5：不做重试风暴）。
+const newsnowCache = new Map(); // id → items[] | Error
+let lastFetchAt = 0;
+
+async function getNewsNow(id, opts, delayMs) {
+  if (newsnowCache.has(id)) {
+    const v = newsnowCache.get(id);
+    if (v instanceof Error) throw v;
+    return v;
+  }
+  const elapsed = Date.now() - lastFetchAt;
+  if (lastFetchAt > 0 && elapsed < delayMs) await sleep(delayMs - elapsed);
+  try {
+    const items = await fetchNewsNow(id, opts);
+    newsnowCache.set(id, items);
+    return items;
+  } catch (e) {
+    newsnowCache.set(id, e instanceof Error ? e : new Error(String(e)));
+    throw e;
+  } finally {
+    lastFetchAt = Date.now();
+  }
+}
+
 async function main() {
   const cfg = parseYaml(readFileSync(path.join(ROOT, 'config', 'sectors.yaml'), 'utf8'));
   const { per_sector = 10, history_days = 30, request_delay_ms = 800, user_agent } = cfg.global;
@@ -49,55 +75,66 @@ async function main() {
     .slice(0, 10);
 
   // ── 阶段 0：兜底池只抓一次并缓存，全板块共用（规格 5.2 的警告：不能放进板块循环）──
-  const pool = [];
+  const pool = []; // 兜底池 + 复用的板块源响应，关键词筛选的统一数据源
   for (const id of cfg.fallback_pool || []) {
     try {
-      const got = await fetchNewsNow(id, { limit: 50, userAgent: user_agent });
+      const got = await getNewsNow(id, { limit: 50, userAgent: user_agent }, request_delay_ms);
       pool.push(...got);
       log('ok', `兜底池 <- ${id}：${got.length} 条`);
     } catch (e) {
       log('warn', `兜底池 <- ${id} 失败：${e.message}`);
     }
-    await sleep(request_delay_ms);
   }
   const mergedPool = dedupe(pool);
   log('ok', `兜底池合计 ${mergedPool.length} 条（去重后）`);
 
+  // 板块源响应复用：本轮已抓取的 NewsNow 板块源（财联社热榜/华尔街见闻/金十等）整份并入
+  // 关键词筛选池，不增加请求数。规格 3.1 对工程机械的要求即“从财经源池里按企业名过滤”，
+  // 仅靠 4 个兜底源时该池不完整，化工等纯兜底板块的命中率也会偏低。
+  const reused = [];
+
   // ── 逐板块抓取 ──
+  // 说明：不再“主源凑够即 break”地跳过其余源——所有配置过的源都会抓取一次（结果入池供
+  // 关键词兜底使用），但板块已满时不再向板块内追加条目，板块构成与规格 3.4 的优先级一致。
   const result = {};
   for (const sector of cfg.sectors) {
     const items = [];
     for (const src of sector.sources || []) {
-      if (items.length >= per_sector) break; // 主源凑够即停（规格 3.4 优先级原则）
-      const isNetwork = src.type !== 'keyword';
+      const remaining = per_sector - items.length;
       try {
         let got = [];
         if (src.type === 'newsnow') {
-          got = await fetchNewsNow(src.id, { limit: src.limit ?? per_sector, userAgent: user_agent });
+          const all = await getNewsNow(src.id, { limit: 50, userAgent: user_agent }, request_delay_ms);
+          reused.push(...all);
+          if (remaining > 0) got = all.slice(0, Math.min(src.limit ?? per_sector, remaining));
         } else if (src.type === 'html') {
-          got = await fetchHtmlSource(src, { userAgent: user_agent });
+          if (remaining > 0) got = await fetchHtmlSource(src, { userAgent: user_agent });
         } else if (src.type === 'keyword') {
           // 显式 keyword 源：纯内存过滤，不发请求
-          const seen = new Set(items.map((it) => normalizeTitle(it.title)));
-          got = keywordFilter(mergedPool, src.keywords, Math.min(src.limit ?? per_sector, per_sector - items.length), seen);
+          if (remaining > 0) {
+            const filterPool = dedupe(pool.concat(reused));
+            const seen = new Set(items.map((it) => normalizeTitle(it.title)));
+            got = keywordFilter(filterPool, src.keywords, Math.min(src.limit ?? per_sector, remaining), seen);
+          }
         } else {
           throw new Error(`未知 source type：${src.type}`);
         }
         items.push(...got);
-        log('ok', `${sector.key} <- ${describeSource(src)}：${got.length} 条`);
+        const suffix = remaining <= 0 && src.type === 'newsnow' ? '（板块已满，仅入池）' : '';
+        log('ok', `${sector.key} <- ${describeSource(src)}：${got.length} 条${suffix}`);
       } catch (e) {
         log('warn', `${sector.key} <- ${describeSource(src)} 失败：${e.message}`); // 单源失败继续下一个
       }
-      if (isNetwork) await sleep(request_delay_ms);
     }
 
     // 自动兜底：主源不足时，用板块级 keywords 从池里补足（不拿无关内容凑数）
     if (items.length < per_sector) {
+      const filterPool = dedupe(pool.concat(reused));
       const seen = new Set(items.map((it) => normalizeTitle(it.title)));
-      const fill = keywordFilter(mergedPool, sector.keywords, per_sector - items.length, seen);
+      const fill = keywordFilter(filterPool, sector.keywords, per_sector - items.length, seen);
       if (fill.length) {
         items.push(...fill);
-        log('ok', `${sector.key} 关键词兜底补足 ${fill.length} 条`);
+        log('ok', `${sector.key} 关键词兜底补足 ${fill.length} 条（筛选池 ${filterPool.length} 条）`);
       }
     }
 

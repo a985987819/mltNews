@@ -84,6 +84,13 @@ export function makeComparator(priorityKeywords) {
   return (a, b) => hit(b) - hit(a) || compareTime(a, b);
 }
 
+// 单个关键词匹配：含非 ASCII（中文）的词大小写不敏感；纯 ASCII 词区分大小写，
+// 避免 PTA 误命中 TapTap、API 误命中 rapid、RAG 误命中 storage 这类短词假阳性
+function matchKeyword(title, keyword) {
+  if (/^[\x00-\x7F]+$/.test(keyword)) return title.includes(keyword);
+  return title.toLowerCase().includes(keyword.toLowerCase());
+}
+
 // 从池里按关键词筛（纯内存，不发请求）。excludeTitles 为已入选条目的归一化标题集合
 export function keywordFilter(items, keywords, limit, excludeTitles) {
   if (!Array.isArray(keywords) || keywords.length === 0 || !(limit > 0)) return [];
@@ -91,8 +98,8 @@ export function keywordFilter(items, keywords, limit, excludeTitles) {
   const out = [];
   for (const it of items || []) {
     if (out.length >= limit) break;
-    const t = String(it.title).toLowerCase();
-    if (!keywords.some((k) => t.includes(String(k).toLowerCase()))) continue;
+    const t = String(it.title);
+    if (!keywords.some((k) => matchKeyword(t, String(k)))) continue;
     const key = normalizeTitle(it.title);
     if (key && exclude.has(key)) continue;
     exclude.add(key);

@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-16T16:11:59.581Z",
+  "sectors": {
+    "politics": {
+      "name": "时政",
+      "count": 10,
+      "degraded": false,
+      "items": [
+        {
+          "title": "习近平将同俄罗斯总统普京、美国总统特朗普举行中俄美元首会晤",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34488263",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        },
+        {
+          "title": "国家统计局：10月份一线城市商品房价环比上涨，二三线城市环比下降",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34488425",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        },
+        {
+          "title": "APEC中国时间｜对话俄罗斯学者：中俄美元首会晤传递什么新信号？",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34489422",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        },
+        {
+          "title": "地标是如何炼成的｜橘子洲头：一座“年轻”雕塑的生命力",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34451732",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        },
+        {
+          "title": "马上评｜老师，为何越来越“难做”了",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34489128",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        },
+        {
+          "title": "河北滦南通报“800万建污水处理厂4年未启用”：开展全面核查",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34489676",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        },
+        {
+          "title": "山东13岁少年被控杀害5岁邻居案将开庭：最高检核准追诉，被害人父亲望顶格判处",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34490040",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        },
+        {
+          "title": "媒体：“打包丢脸”被扣4分，孩子真话不该只换一个红叉",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34487337",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        },
+        {
+          "title": "人民日报来信调查：河北滦南县800多万建污水处理厂，为何4年未启用",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34487948",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        },
+        {
+          "title": "人民锐评：停车计费做“减法”，城市治理做“加法”",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34487284",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-16T16:12:05.480Z"
+        }
+      ]
+    },
+    "finance": {
+      "name": "金融",
+      "count": 10,
+      "degraded": false,
+      "items": [
+        {
+          "title": "创新药龙头大跌22%，重仓基金“创伤”多深？",
+          "url": "https://www.cls.cn/detail/2535772",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        },
+        {
+          "title": "华为云发布具身世界模型 基于国产算力昇腾进行训练",
+          "url": "https://www.cls.cn/detail/2535409",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        },
+        {
+          "title": "A股回购队伍再扩容，胜宏科技、联讯仪器等披露回购事项",
+          "url": "https://www.cls.cn/detail/2535797",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        },
+        {
+          "title": "股价站稳30元！长江电力创历史新高，今日新高热股盘点，这一方向密集涌现",
+          "url": "https://www.cls.cn/detail/2535622",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        },
+        {
+          "title": "【焦点复盘】创业板指跌4.37%再创年内新低，全市场超250股跌超9%，资金持续逆势抱团红利股",
+          "url": "https://www.cls.cn/detail/2535595",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        },
+        {
+          "title": "【每日收评】沪指跌近1%险守3600点，全市场超4300股收绿，多只银行股创下新高",
+          "url": "https://www.cls.cn/detail/2535524",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        },
+        {
+          "title": "金价跌至一年多来最低水平 美股纳指期货跌近1.3% | 今夜看点",
+          "url": "https://www.cls.cn/detail/2535893",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        },
+        {
+          "title": "知名私募反向操作英伟达，高毅三季度清仓，景林重新入场，东方港湾继续重仓",
+          "url": "https://www.cls.cn/detail/2535649",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        },
+        {
+          "title": "侨银转债“惊魂72小时”，5.46亿本息终足额兑付，临期转债面临重估",
+          "url": "https://www.cls.cn/detail/2535671",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        },
+        {
+          "title": "经济学家警告：美国经济已濒临崩溃 AI是最后的“遮羞布”",
+          "url": "https://www.cls.cn/detail/2535591",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:48:19.147Z"
+        }
+      ]
+    },
+    "ai": {
+      "name": "AI",
+      "count": 10,
+      "degraded": false,
+      "items": [
+        {
+          "title": "Google DeepMind 发布 Gemini Robotics 2.5 与 AlphaGenome 2 两个领域模型",
+          "url": "https://aihot.news/items/dmsn8ljakb7klt50pc7w01oub",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        },
+        {
+          "title": "Gemini Managed Agents 支持自托管环境",
+          "url": "https://aihot.news/items/t9o6n4yk9tx96xi0sxkyykxaf",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        },
+        {
+          "title": "Google 与 Artificial Analysis 发布多模态知识智能体基准",
+          "url": "https://aihot.news/items/pjljxvhmxy8mg0apl6dz059ox",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        },
+        {
+          "title": "Google 发布 Gemini Decisions API，由 Gemini Decision 1 驱动",
+          "url": "https://aihot.news/items/pdwuw9ralhklum2zrp2hw0gl2",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        },
+        {
+          "title": "Gemini 4 Hydrogen 与 Carbon 如何按工作负载选型",
+          "url": "https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        },
+        {
+          "title": "Google 发布 Gemini 4 Carbon 与 Hydrogen，并推出 Decisions API 和自托管 agent 沙箱",
+          "url": "https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        },
+        {
+          "title": "Perplexity 推出 Frontier Research，投入至少 10,000 GPU 建造自动研究员",
+          "url": "https://aihot.news/items/qx8tl0o0zfzb169u5frk96o0e",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        },
+        {
+          "title": "Perplexity 推出 Frontier Research，目标打造可自主研究的系统",
+          "url": "https://aihot.news/items/s7bsonhe4lsrhs23t928vdwk8",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        },
+        {
+          "title": "Liquid AI 发布 d1.2-ultra 与 d1.2 决策模型",
+          "url": "https://aihot.news/items/c7vgnvk5g20kcz9cu90jxp4gq",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        },
+        {
+          "title": "Anthropic 谈智能体记忆：关键在于知道该忘什么，而不是存多少",
+          "url": "https://aihot.news/items/hhcr0segy5as2wptifon72a6z",
+          "source": "AI热点",
+          "publishedAt": "2026-11-16T16:12:12.137Z"
+        }
+      ]
+    },
+    "optical": {
+      "name": "光通信",
+      "count": 10,
+      "degraded": false,
+      "items": [
+        {
+          "title": "源杰科技斩获 17.44 亿元大功率激光器芯片大单，产能转化成后续增长关键",
+          "url": "http://www.c-fol.net/news/7_202611/20261116100036.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-16T02:00:36.000Z"
+        },
+        {
+          "title": "CFCF AP 2026的感谢信",
+          "url": "http://www.c-fol.net/news/7_202611/20261116091150.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-16T01:11:50.000Z"
+        },
+        {
+          "title": "下台后的黄仁勋可以来做光连接初创公司",
+          "url": "http://www.c-fol.net/news/7_202611/20261113120827.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-13T04:08:27.000Z"
+        },
+        {
+          "title": "新厂房新起点！武汉芯信光乔迁，国产全光交换机冲刺AI算力互联",
+          "url": "http://www.c-fol.net/news/7_202611/20261112232537.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-12T15:25:37.000Z"
+        },
+        {
+          "title": "CFCF AP 2026 主论坛落幕：光通信超级周期走向分化，东南亚算力成供应链新支点",
+          "url": "http://www.c-fol.net/news/7_202611/20261111174823.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-11T09:48:23.000Z"
+        },
+        {
+          "title": "三科创面对竞争与收购的新选择：从亚太CFCF的讨论说起",
+          "url": "http://www.c-fol.net/news/7_202611/20261110222019.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-10T14:20:19.000Z"
+        },
+        {
+          "title": "光器件全自动化产线所遇到的挑战：亚太CFCF的讨论",
+          "url": "http://www.c-fol.net/news/7_202611/20261109120008.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-09T04:00:08.000Z"
+        },
+        {
+          "title": "苏州牧晶智能二期厂房正式投产，国产光电封装装备产能再跃升",
+          "url": "http://www.c-fol.net/news/7_202611/20261109104033.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-09T02:40:33.000Z"
+        },
+        {
+          "title": "CFCF AP 2026泰国AI数据中心专场：电力供给或约束数据中心建设节奏与产业格局",
+          "url": "http://www.c-fol.net/news/7_202611/20261107193353.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-07T11:33:53.000Z"
+        },
+        {
+          "title": "CFCF AP 2026自动化专场:光通信自动化工厂是技术创新与产业发展的必然",
+          "url": "http://www.c-fol.net/news/7_202611/20261107190943.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-07T11:09:43.000Z"
+        }
+      ]
+    },
+    "dev": {
+      "name": "软件开发",
+      "count": 10,
+      "degraded": false,
+      "items": [
+        {
+          "title": "文件明明在本地，为什么自动验收仍说没交？我的 SoduWork 使用记录",
+          "url": "https://juejin.cn/post/7708478489645285402",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        },
+        {
+          "title": "AI帮我生成了一个炫酷的3D大屏，上线3天就卡崩了",
+          "url": "https://juejin.cn/post/7708639137272102966",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        },
+        {
+          "title": "井道无信号、满手黑机油，我们如何用 DeepSeek V4 打造不“犯浑”的电梯维保 Agent？",
+          "url": "https://juejin.cn/post/7707639689457582106",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        },
+        {
+          "title": "代码越来越便宜，判断力越来越贵：AI 时代的 Android 架构与协程避坑指南",
+          "url": "https://juejin.cn/post/7707957158462357546",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        },
+        {
+          "title": "DeepSeek Harness 实战与架构解析：让 Agent 从“会聊”到“能交付”",
+          "url": "https://juejin.cn/post/7708058421904392242",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        },
+        {
+          "title": "Flutter Analyzer 系列坑推进，必看，AI 时代这玩意最吃你内存",
+          "url": "https://juejin.cn/post/7708010764016517147",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        },
+        {
+          "title": "我花了一周时间，看AI公司怎么\"管\"AI，结果越看越后背发凉",
+          "url": "https://juejin.cn/post/7707927071724535817",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        },
+        {
+          "title": "为什么 agent 的 demo 都很惊艳，上了生产就不靠谱",
+          "url": "https://juejin.cn/post/7707938781526245391",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        },
+        {
+          "title": "AI Agent 子智能体协作实战：怎样用好 Subagent 分工与省 Token｜Oil Book",
+          "url": "https://juejin.cn/post/7707927071724486665",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        },
+        {
+          "title": "如何让 AI 高效工作",
+          "url": "https://juejin.cn/post/7708627348664762394",
+          "source": "掘金",
+          "publishedAt": "2026-11-16T15:47:01.786Z"
+        }
+      ]
+    },
+    "security": {
+      "name": "网络安全",
+      "count": 10,
+      "degraded": false,
+      "items": [
+        {
+          "title": "AI Agent 在红队实战中的落地与坑：一个 USENIX24 开源 Agent 的范围强制层实测",
+          "url": "https://www.freebuf.com/articles/ai-security/512791.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        },
+        {
+          "title": "日本10月网络事件达233起创纪录，1.85亿条个人记录涉险",
+          "url": "https://www.freebuf.com/articles/database/512780.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        },
+        {
+          "title": "AI生成补丁成黑客攻击路线图，漏洞修复攻防差距持续拉大",
+          "url": "https://www.freebuf.com/articles/ai-security/512777.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        },
+        {
+          "title": "谷歌Project Zero更新漏洞披露政策，到期无论修复与否均公开",
+          "url": "https://www.freebuf.com/news/512746.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        },
+        {
+          "title": "Claude借助3美元Arduino破解32年车龄Jeep ECU，逆向分析发动机电脑",
+          "url": "https://www.freebuf.com/articles/ai-security/512706.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        },
+        {
+          "title": "研究人员发现6个0Day漏洞，可未授权接管超市制冷系统",
+          "url": "https://www.freebuf.com/news/512667.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        },
+        {
+          "title": "「宝马」的两次信任边界改写：220 万辆车的车门，和一张没写身份的服务目录",
+          "url": "https://www.freebuf.com/articles/endpoint/512640.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        },
+        {
+          "title": "FBI披露黑客利用ARTEX AI Agents发起攻击，不到三小时即可获取特权访问",
+          "url": "https://www.freebuf.com/articles/ai-security/512581.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        },
+        {
+          "title": "Cursor披露10月安全事件溯源结果，Fireworks AI密钥泄露致Claude Code扩展被植后门",
+          "url": "https://www.freebuf.com/news/512563.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        },
+        {
+          "title": "FreeBuf早报 | 台积电确认数据泄露；微软365爆发大规模服务宕机",
+          "url": "https://www.freebuf.com/news/512448.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-16T15:53:53.672Z"
+        }
+      ]
+    },
+    "machinery": {
+      "name": "工程机械",
+      "count": 6,
+      "degraded": false,
+      "items": [
+        {
+          "title": "2026智能建造装备与应用发展大会在石家庄召开",
+          "url": "http://www.cncma.org/article/22815",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "2026年度机械工业科学技术奖工程机械行业获奖项目揭晓",
+          "url": "http://www.cncma.org/article/22800",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "协会领导赴 bC India 2026展会现场考察交流",
+          "url": "http://www.cncma.org/article/22767",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "绿智领航 共享卓越，BICES 2027新闻发布会在京召开",
+          "url": "http://www.cncma.org/article/22644",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "协会2026年首场新闻发布会在京召开",
+          "url": "http://www.cncma.org/article/22673",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "苏子孟会长受邀参加徐工东北大区成立活动",
+          "url": "http://www.cncma.org/article/22849",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        }
+      ]
+    },
+    "chemical": {
+      "name": "化工",
+      "count": 8,
+      "degraded": false,
+      "items": [
+        {
+          "title": "AI抛售持续，英伟达财报前夕，费半大跌5%，黄金、原油双双走低",
+          "url": "https://wallstreetcn.com/articles/3785999",
+          "source": "华尔街见闻",
+          "publishedAt": "2026-11-16T16:12:09.484Z"
+        },
+        {
+          "title": "财联社11月16日电，布伦特原油期货跌幅扩大至3%，报92.969美元/桶。",
+          "url": "https://www.cls.cn/detail/2535966",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:56:17.708Z"
+        },
+        {
+          "title": "财联社11月16日电，埃克森美孚已在圭亚那Uaru项目启动生产，该国石油装机产能随之升至110万桶/日。",
+          "url": "https://www.cls.cn/detail/2535964",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:56:17.708Z"
+        },
+        {
+          "title": "财联社11月16日电，燃油夜盘收跌约4%，合成橡胶跌3.1%，焦炭跌2.4%，铁矿石跌1.4%。",
+          "url": "https://www.cls.cn/detail/2535956",
+          "source": "财联社",
+          "publishedAt": "2026-11-16T15:56:17.708Z"
+        },
+        {
+          "title": "SC原油主力合约日内大跌4.00%，现报593.70元/桶。",
+          "url": "https://flash.jin10.com/detail/20261116232501050800",
+          "source": "金十数据",
+          "publishedAt": "2026-11-16T15:52:48.638Z"
+        },
+        {
+          "title": "WTI原油日内大跌3.00%，现报86.39美元/桶。",
+          "url": "https://flash.jin10.com/detail/20261116232456253800",
+          "source": "金十数据",
+          "publishedAt": "2026-11-16T15:52:48.638Z"
+        },
+        {
+          "title": "布伦特原油跌破93美元/桶，日内跌3.46%。",
+          "url": "https://flash.jin10.com/detail/20261116232132814800",
+          "source": "金十数据",
+          "publishedAt": "2026-11-16T15:52:48.638Z"
+        },
+        {
+          "title": "上期所原油期货夜盘跌幅扩大至4%。",
+          "url": "https://wallstreetcn.com/livenews/3200746",
+          "source": "华尔街见闻",
+          "publishedAt": "2026-11-16T15:39:30.000Z"
+        }
+      ]
+    }
+  }
+}

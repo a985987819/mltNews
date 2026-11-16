@@ -112,6 +112,9 @@ export default function App() {
       : Object.keys(filtered)
     : [];
 
+  // 规格按 7.4.3：切换到尚未加载的日期时显示骨架；同日期刷新则保留旧数据避免闪烁
+  const staleDate = !data || data.date !== date;
+
   return (
     <div className="page">
       <TopBar
@@ -126,7 +129,7 @@ export default function App() {
         refreshing={loading}
       />
       {error && <div className="error-banner">加载失败：{error}（当前展示上次成功的数据）</div>}
-      {loading && !data ? (
+      {loading && staleDate ? (
         <main className="board">
           {Array.from({ length: 8 }, (_, i) => (
             <div key={i} className="sector skeleton">
