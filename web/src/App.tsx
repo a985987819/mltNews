@@ -24,14 +24,14 @@ function errMsg(e: unknown): string {
 export default function App() {
   const [index, setIndex] = useState<DataIndex | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [date, setDate] = useState('');
+  const [snapKey, setSnapKey] = useState(''); // 当前选中的快照 key
   const [data, setData] = useState<NewsData | null>(null);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
   const [theme, setTheme] = useState<'light' | 'dark'>(initialTheme);
   const [, setTick] = useState(0); // 每分钟自增一次，驱动相对时间重新渲染
 
-  // 深色模式：CSS 变量 + localStorage，默认跟随系统（规格 7.4.6）
+  // 深色模式：CSS 变量 + localStorage，白色为默认（规格 7.4.6）
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     try {
@@ -48,7 +48,7 @@ export default function App() {
       .then((idx) => {
         if (alive) {
           setIndex(idx);
-          setDate(idx.latest);
+          setSnapKey(idx.latest);
         }
       })
       .catch((e) => {
@@ -72,12 +72,12 @@ export default function App() {
     };
   }, []);
 
-  // 日期切换：目标日期已在展示则跳过（避免重复加载与闪烁），否则读缓存/网络（规格 7.4.3）
+  // 快照切换：目标快照已在展示则跳过（避免重复加载与闪烁），否则读缓存/网络
   useEffect(() => {
-    if (!index || !date || (data && data.date === date)) return;
+    if (!index || !snapKey || (data && data.snapshotKey === snapKey)) return;
     let alive = true;
     setLoading(true);
-    loadNewsData(date, date === index.latest)
+    loadNewsData(snapKey, snapKey === index.latest)
       .then((d) => {
         if (!alive) return;
         setData(d);
@@ -92,7 +92,7 @@ export default function App() {
     return () => {
       alive = false;
     };
-  }, [index, date, data]);
+  }, [index, snapKey, data]);
 
   // 相对时间（“X 分钟前”）每分钟自动刷新
   useEffect(() => {
@@ -115,7 +115,7 @@ export default function App() {
   const refresh = () => {
     if (!index) return;
     setLoading(true);
-    loadNewsData(date || index.latest, date === index.latest, true)
+    loadNewsData(snapKey || index.latest, snapKey === index.latest, true)
       .then(setData)
       .catch(() => undefined)
       .finally(() => setLoading(false));
@@ -161,16 +161,17 @@ export default function App() {
       : Object.keys(filtered)
     : [];
 
-  // 规格按 7.4.3：切换到尚未加载的日期时显示骨架；同日期刷新则保留旧数据避免闪烁
-  const staleDate = !data || data.date !== date;
+  // 切换到尚未加载的快照时显示骨架；同快照刷新则保留旧数据避免闪烁
+  const staleSnap = !data || data.snapshotKey !== snapKey;
   const searching = query.trim().length > 0;
 
   return (
     <div className="page">
       <TopBar
-        dates={index?.dates ?? []}
-        date={date}
-        onDateChange={setDate}
+        snapshots={index?.snapshots ?? []}
+        snapKey={snapKey}
+        latestKey={index?.latest ?? ''}
+        onSnapChange={setSnapKey}
         query={query}
         onQueryChange={setQuery}
         theme={theme}
@@ -184,7 +185,7 @@ export default function App() {
           找到 {matchCount} 条匹配「{query.trim()}」，按 Esc 清空
         </div>
       )}
-      {loading && staleDate ? (
+      {loading && staleSnap ? (
         <main className="board">
           {Array.from({ length: 8 }, (_, i) => (
             <div key={i} className="sector skeleton">

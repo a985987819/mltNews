@@ -1,9 +1,12 @@
 {
-  "schemaVersion": 1,
-  "latest": "2026-11-17",
-  "dates": [
-    "2026-11-17",
-    "2026-11-16"
+  "schemaVersion": 2,
+  "latest": "2026-11-17T00",
+  "snapshots": [
+    {
+      "key": "2026-11-17T00",
+      "date": "2026-11-17",
+      "time": "00"
+    }
   ],
   "sectorOrder": [
     "politics",

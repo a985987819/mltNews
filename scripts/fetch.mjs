@@ -67,12 +67,12 @@ async function main() {
   const cfg = parseYaml(readFileSync(path.join(ROOT, 'config', 'sectors.yaml'), 'utf8'));
   const { per_sector = 10, history_days = 30, request_delay_ms = 800, user_agent } = cfg.global;
 
-  // 北京时间的“今天”（Actions 在 UTC 00:0x 运行，对应北京当天早上）
+  // 北京时间的“现在”；每次运行产出一份小时级快照（key 如 2026-11-17T08）
   const nowMs = Date.now();
-  const today = new Date(nowMs + 8 * 3600 * 1000).toISOString().slice(0, 10);
-  const yesterday = new Date(Date.parse(`${today}T00:00:00Z`) - 24 * 3600 * 1000)
-    .toISOString()
-    .slice(0, 10);
+  const bjNow = new Date(nowMs + 8 * 3600 * 1000);
+  const today = bjNow.toISOString().slice(0, 10);
+  const hour = bjNow.toISOString().slice(11, 13);
+  const snapshotKey = `${today}T${hour}`;
 
   // ── 阶段 0：兜底池只抓一次并缓存，全板块共用（规格 5.2 的警告：不能放进板块循环）──
   const pool = []; // 兜底池 + 复用的板块源响应，关键词筛选的统一数据源
@@ -147,56 +147,80 @@ async function main() {
     log('ok', `${sector.key}（${sector.name}）最终 ${finalItems.length} 条`);
   }
 
-  // ── 降级：某板块 0 条 → 复用昨日数据并标记 degraded（规格 5.5）──
+  // ── 降级：某板块 0 条 → 复用上一个快照的数据并标记 degraded（规格 5.5）──
+  const listHistoryKeys = () => {
+    let entries = [];
+    try {
+      entries = readdirSync(HISTORY_DIR);
+    } catch {
+      return []; // 首次运行时目录尚不存在
+    }
+    return entries
+      .map((f) => /^(\d{4}-\d{2}-\d{2})T(\d{2})\.json$/.exec(f))
+      .filter(Boolean)
+      .map((m) => ({ key: `${m[1]}T${m[2]}`, date: m[1], time: m[2] }))
+      .sort((a, b) => (a.key < b.key ? 1 : -1));
+  };
+
   for (const key of Object.keys(result)) {
     if (result[key].items.length > 0) continue;
-    const yDay = loadJson(path.join(HISTORY_DIR, `${yesterday}.json`));
-    let reused = yDay?.sectors?.[key]?.items?.length ? yDay.sectors[key] : null;
+    let reused = null;
+    // 优先取时间上紧邻本快照之前的一份历史
+    const prev = listHistoryKeys().find((s) => s.key < snapshotKey);
+    if (prev) {
+      const prevData = loadJson(path.join(HISTORY_DIR, `${prev.key}.json`));
+      if (prevData?.sectors?.[key]?.items?.length) reused = prevData.sectors[key];
+    }
     if (!reused) {
       const last = loadJson(path.join(DATA_DIR, 'latest.json'));
-      if (last && last.date !== today && last.sectors?.[key]?.items?.length) reused = last.sectors[key];
+      if (last?.sectors?.[key]?.items?.length && last.snapshotKey !== snapshotKey) reused = last.sectors[key];
     }
     if (reused) {
       result[key] = { ...reused, degraded: true };
-      log('warn', `${key} 今日 0 条，复用此前数据并标记 degraded`);
+      log('warn', `${key} 本次 0 条，复用此前快照数据并标记 degraded`);
     } else {
       result[key].degraded = true;
-      log('warn', `${key} 今日 0 条，且无历史数据可用`);
+      log('warn', `${key} 本次 0 条，且无历史快照可用`);
     }
   }
 
-  // ── 输出（规格 5.6 / 6）──
+  // ── 输出（规格 5.6 / 6）：latest + 时间快照 + index ──
   mkdirSync(HISTORY_DIR, { recursive: true });
-  const payload = { schemaVersion: 1, date: today, generatedAt: new Date(nowMs).toISOString(), sectors: result };
+  const payload = {
+    schemaVersion: 2,
+    snapshotKey,
+    date: today,
+    generatedAt: new Date(nowMs).toISOString(),
+    sectors: result,
+  };
   writeJson(path.join(DATA_DIR, 'latest.json'), payload);
-  writeJson(path.join(HISTORY_DIR, `${today}.json`), payload);
+  writeJson(path.join(HISTORY_DIR, `${snapshotKey}.json`), payload);
 
-  // index.json：重算日期索引
-  const dates = new Set([today]);
-  for (const f of readdirSync(HISTORY_DIR)) {
-    const m = /^(\d{4}-\d{2}-\d{2})\.json$/.exec(f);
-    if (m) dates.add(m[1]);
-  }
-  const dateList = [...dates].sort((a, b) => (a < b ? 1 : -1));
+  // index.json：列出全部时间快照（新→旧），前端下拉按此渲染
+  const snapshots = listHistoryKeys();
   writeJson(path.join(DATA_DIR, 'index.json'), {
-    schemaVersion: 1,
-    latest: today,
-    dates: dateList,
+    schemaVersion: 2,
+    latest: snapshotKey,
+    snapshots,
     sectorOrder: cfg.sectors.map((s) => s.key),
     sectorNames: Object.fromEntries(cfg.sectors.map((s) => [s.key, s.name])),
   });
 
-  // 历史只保留 history_days 天
+  // 快照文件只保留 history_days 天（git 提交历史里永久留档，删掉的随时可从 git 找回）
+  const cutoff = new Date(Date.parse(`${today}T00:00:00Z`) - (history_days - 1) * 86400000)
+    .toISOString()
+    .slice(0, 10);
   let pruned = 0;
-  for (const d of dateList.slice(history_days)) {
+  for (const s of snapshots) {
+    if (s.date >= cutoff) continue;
     try {
-      unlinkSync(path.join(HISTORY_DIR, `${d}.json`));
+      unlinkSync(path.join(HISTORY_DIR, `${s.key}.json`));
       pruned++;
     } catch {
       /* 忽略单个文件删除失败 */
     }
   }
-  if (pruned) log('ok', `已清理 ${pruned} 个过期历史文件`);
+  if (pruned) log('ok', `已清理 ${pruned} 个过期快照文件（早于 ${cutoff}）`);
 
   // 全站全空 → 非零退出，让 Actions 报红并发通知邮件（规格 5.5）
   const total = Object.values(result).reduce((n, s) => n + s.items.length, 0);

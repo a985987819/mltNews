@@ -1,9 +1,11 @@
 import { useEffect, useRef } from 'react';
+import type { SnapshotMeta } from '../types';
 
 interface Props {
-  dates: string[];
-  date: string;
-  onDateChange: (d: string) => void;
+  snapshots: SnapshotMeta[];
+  snapKey: string;
+  latestKey: string;
+  onSnapChange: (key: string) => void;
   query: string;
   onQueryChange: (q: string) => void;
   theme: 'light' | 'dark';
@@ -12,19 +14,19 @@ interface Props {
   refreshing: boolean;
 }
 
-// ISO 日期 → “11月17日 周一”（下拉框里直接读得懂，不必心算）
-function fmtDate(iso: string): string {
-  const dt = new Date(`${iso}T12:00:00Z`);
-  const week = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'][dt.getUTCDay()];
-  return `${dt.getUTCMonth() + 1}月${dt.getUTCDate()}日 ${week}`;
+// ISO 日期 → “11月17日”（快照下拉里直接读得懂）
+function fmtLabel(s: SnapshotMeta, isLatest: boolean): string {
+  const [, m, d] = s.date.split('-');
+  return `${Number(m)}月${Number(d)}日 ${s.time}时${isLatest ? ' · 最新' : ''}`;
 }
 
-// 报头：印章 + 衬线品牌 + 日期选择 + 搜索 + 刷新 + 明暗切换（规格 1.2）
+// 报头：印章 + 衬线品牌 + 快照选择 + 搜索 + 刷新 + 明暗切换（规格 1.2）
 // 快捷键：/ 聚焦搜索，Esc 清空并退出搜索
 export default function TopBar({
-  dates,
-  date,
-  onDateChange,
+  snapshots,
+  snapKey,
+  latestKey,
+  onSnapChange,
   query,
   onQueryChange,
   theme,
@@ -64,16 +66,16 @@ export default function TopBar({
           行业热点<span className="brand-sub">聚合板</span>
         </div>
         <label className="field">
-          <span className="field-label">日期</span>
+          <span className="field-label">快照</span>
           <select
-            value={date}
-            onChange={(e) => onDateChange(e.target.value)}
-            disabled={dates.length === 0}
-            aria-label="选择数据日期"
+            value={snapKey}
+            onChange={(e) => onSnapChange(e.target.value)}
+            disabled={snapshots.length === 0}
+            aria-label="选择数据快照"
           >
-            {dates.map((d) => (
-              <option key={d} value={d}>
-                {fmtDate(d)}
+            {snapshots.map((s) => (
+              <option key={s.key} value={s.key}>
+                {fmtLabel(s, s.key === latestKey)}
               </option>
             ))}
           </select>

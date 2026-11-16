@@ -10,14 +10,15 @@ export async function loadIndex(): Promise<DataIndex> {
   return (await res.json()) as DataIndex;
 }
 
-// isLatest=true 读 latest.json，否则读 history/{date}.json；bust=true 绕过内存与 HTTP 缓存（刷新按钮）
-export function loadNewsData(date: string, isLatest: boolean, bust = false): Promise<NewsData> {
-  const url = `${BASE}data/${isLatest ? 'latest' : `history/${date}`}.json`;
+// isLatest=true 读 latest.json，否则读 history/{key}.json（key 如 2026-11-17T08）；
+// bust=true 绕过内存与 HTTP 缓存（刷新按钮）
+export function loadNewsData(key: string, isLatest: boolean, bust = false): Promise<NewsData> {
+  const url = `${BASE}data/${isLatest ? 'latest' : `history/${key}`}.json`;
   if (bust) cache.delete(url);
   let p = cache.get(url);
   if (!p) {
     p = fetch(url, { cache: bust ? 'reload' : 'default' }).then(async (res) => {
-      if (!res.ok) throw new Error(`${isLatest ? 'latest' : date} HTTP ${res.status}`);
+      if (!res.ok) throw new Error(`${isLatest ? 'latest' : key} HTTP ${res.status}`);
       return (await res.json()) as NewsData;
     });
     cache.set(url, p);

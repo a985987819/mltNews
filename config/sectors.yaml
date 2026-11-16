@@ -4,7 +4,7 @@
 # ─────────────────────────────────────────────
 global:
   per_sector: 10          # 每板块最终条数
-  history_days: 30        # 保留多少天历史
+  history_days: 7         # 快照文件保留天数（每 3 小时一份；git 提交历史永久留档）
   request_delay_ms: 800   # 请求间隔（串行，不并发）
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
