@@ -12,7 +12,14 @@ interface Props {
   refreshing: boolean;
 }
 
-// 顶部工具条：日期选择 + 搜索 + 刷新（只重读 JSON）+ 明暗切换（规格 1.2）
+// ISO 日期 → “11月17日 周一”（下拉框里直接读得懂，不必心算）
+function fmtDate(iso: string): string {
+  const dt = new Date(`${iso}T12:00:00Z`);
+  const week = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'][dt.getUTCDay()];
+  return `${dt.getUTCMonth() + 1}月${dt.getUTCDate()}日 ${week}`;
+}
+
+// 报头：印章 + 衬线品牌 + 日期选择 + 搜索 + 刷新 + 明暗切换（规格 1.2）
 // 快捷键：/ 聚焦搜索，Esc 清空并退出搜索
 export default function TopBar({
   dates,
@@ -51,7 +58,10 @@ export default function TopBar({
     <header className="topbar">
       <div className="topbar-inner">
         <div className="brand">
-          行业热点<span>聚合板</span>
+          <span className="seal" aria-hidden="true">
+            聚
+          </span>
+          行业热点<span className="brand-sub">聚合板</span>
         </div>
         <label className="field">
           <span className="field-label">日期</span>
@@ -63,7 +73,7 @@ export default function TopBar({
           >
             {dates.map((d) => (
               <option key={d} value={d}>
-                {d}
+                {fmtDate(d)}
               </option>
             ))}
           </select>
@@ -72,7 +82,7 @@ export default function TopBar({
           ref={inputRef}
           className="search"
           type="search"
-          placeholder="搜索标题…（按 / 聚焦）"
+          placeholder="检索标题（按 / 聚焦）"
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
           onKeyDown={onInputKeyDown}

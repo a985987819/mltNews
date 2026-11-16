@@ -14,7 +14,7 @@ function initialTheme(): 'light' | 'dark' {
   } catch {
     /* localStorage 不可用时忽略 */
   }
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  return 'light'; // 白色主题为默认，深色可手动切换并记忆
 }
 
 function errMsg(e: unknown): string {
