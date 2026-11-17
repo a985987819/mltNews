@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 2,
+  "snapshotKey": "2026-11-18T07",
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-17T23:24:56.786Z",
+  "sectors": {
+    "politics": {
+      "name": "时政",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "圆桌｜中俄美元首历史性首次会晤在即，三国权威学者谈大国关系新契机",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34490498",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "女子在盒马申请400余次仅退款“薅”走1.7万元？涉嫌诈骗被刑拘",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34492459",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "澎湃回声｜唐山涉嫌“虚假住院骗保”医院被取消工伤定点资格，省级监管部门已参与调查",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34489900",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "网络招聘帖假招聘、真卖课？记者实测被推荐先买课，12家单位均称是虚假招聘信息",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34490252",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "冷门“顶流”｜研究满语40年，一位七旬学者的紧迫感",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34490375",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "释新闻｜拿顿巴斯换北约成员资格，乌克兰面临一道两难选择题",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34490414",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "马上评｜AI检测不透明，别又成了知网的一门生意",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34494042",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "张升民人民日报撰文：保持惩治腐败高压态势",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34491101",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "结婚9年3个孩子非亲生！男子索赔，法院一审判女方赔偿55.75万",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34491998",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "APEC中国时间｜专访秘鲁前财长：APEC不是“清谈馆”，可为中小国家提供稳定外部支撑",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34492303",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "余华：英语编辑熟悉的中国作家不超过5个",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34491303",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        },
+        {
+          "title": "宇树王兴兴：2026年无论是AI大模型还是机器人领域，水面以下的情况都非常激动人心",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34491510",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-17T23:25:00.199Z"
+        }
+      ]
+    },
+    "finance": {
+      "name": "金融",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "美商务部发布限制远程获取先进半导体相关措施，中方回应",
+          "url": "https://www.cls.cn/detail/2537022",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "股价跌破“1元”，5家A股公司拉响退市警报",
+          "url": "https://www.cls.cn/detail/2537002",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "股票回购增持再贷款如何“加力”落地？商业银行一线调研：四大痛点待拆解",
+          "url": "https://www.cls.cn/detail/2536959",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "科技股反弹纳指期货涨0.37%  英伟达财报与Anthropic IPO接踵而至 | 今夜看点",
+          "url": "https://www.cls.cn/detail/2537068",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "雷军、李彦宏、王兴兴、曾毓群等齐聚，再谈AI与机器人未来",
+          "url": "https://www.cls.cn/detail/2536992",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "连续2日不足1.5万亿！A股成交额创年内第六低，融资余额规模再度下降",
+          "url": "https://www.cls.cn/detail/2536808",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "美股收盘：标普、纳指四连跌 芯片股反弹费半指数尾盘转涨",
+          "url": "https://www.cls.cn/detail/2537268",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "【焦点复盘】沪指缩量跌0.5%失守3600点，影视、物理AI概念遭深幅回调，华为算力概念逆势走强",
+          "url": "https://www.cls.cn/detail/2536694",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "中资私募Q3美股调仓全景：中概获普遍加仓 AI硬件现巨大分歧",
+          "url": "https://www.cls.cn/detail/2536836",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "【每日收评】创业板指冲高回落跌超1%，芯片产业链逆势活跃，高位人气股持续退潮",
+          "url": "https://www.cls.cn/detail/2536654",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "争夺ST恒信控制权：提案权被驳回 股东实名举报",
+          "url": "https://www.cls.cn/detail/2536884",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        },
+        {
+          "title": "连续加息四次？这一美联储官员释放了迄今最鹰派信号",
+          "url": "https://www.cls.cn/detail/2537218",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T22:56:42.981Z"
+        }
+      ]
+    },
+    "ai": {
+      "name": "AI",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "Microsoft 发布 MAI Cyber 2 Flash，并回顾此前开源安全合作",
+          "url": "https://aihot.news/items/z5dh6bfdagjczcyp3jd7qq97g",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "OpenAI 推出 ChatGPT for Sales 体验",
+          "url": "https://aihot.news/items/vvnuylc5u9aos8dkgpltwk8xn",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "微软在 Ignite 2026 发布编程模型 MAI Code 2 与 MAI Code 2 Flash，已在 GitHub Copilot 上线",
+          "url": "https://aihot.news/items/vq6buq86aodbpij5oe6pe4arh",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "深度实测GPT-6.2 Astra：极致省钱但偏科严重，沟通可读性依旧拉胯",
+          "url": "https://aihot.news/items/n125mhueen4ul4elntsa1kk1v",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "Gemini 4 Hydrogen 全面上线 Google Search",
+          "url": "https://aihot.news/items/vxcsjujkrvgpqxl56xkjgdfqf",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "OpenAI 用 GPT-6 Cyber 发现 Java 漏洞",
+          "url": "https://aihot.news/items/a9dtz5uv8s01jxgbw2733swtk",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "Anthropic IPO 后 Amazon 与 Google 将合计持股近 30%",
+          "url": "https://aihot.news/items/h9i8o2kzwr1fj3op3i48gcyhb",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "Google AI Studio 更新：支持自定义域名并在应用内构建安卓 App",
+          "url": "https://aihot.news/items/m1rphvuva2fc7xhk46jcdqrtu",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "ChatGPT 销售插件接入多家工具",
+          "url": "https://aihot.news/items/t2556r6vji0f2el1umz0lvjpw",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "OpenAI 推出 ChatGPT for Sales 销售体验",
+          "url": "https://aihot.news/items/i52tqwdlkhaol0ysgyvy26bp9",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol：部分成绩超越 Claude Fable 5.2 且成本大降",
+          "url": "https://aihot.news/items/o6ayhyxptxbrmw8vbk5iohmiw",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        },
+        {
+          "title": "Treg AI 推出求职 API，Jev 模型评分",
+          "url": "https://aihot.news/items/l5w34r5af1liz1yvj7xxn7dvc",
+          "source": "AI热点",
+          "publishedAt": "2026-11-17T23:17:44.265Z"
+        }
+      ]
+    },
+    "optical": {
+      "name": "光通信",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "Steve Saunders: 美国全国停飞事件背后是老旧的电信网络",
+          "url": "http://www.c-fol.net/news/7_202611/20261117133438.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-17T05:34:38.000Z"
+        },
+        {
+          "title": "黄仁勋离开英伟达后：光通信订单变少了吗？",
+          "url": "http://www.c-fol.net/news/7_202611/20261117131805.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-17T05:18:05.000Z"
+        },
+        {
+          "title": "源杰科技斩获 17.44 亿元大功率激光器芯片大单，产能转化成后续增长关键",
+          "url": "http://www.c-fol.net/news/7_202611/20261116100036.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-16T02:00:36.000Z"
+        },
+        {
+          "title": "CFCF AP 2026的感谢信",
+          "url": "http://www.c-fol.net/news/7_202611/20261116091150.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-16T01:11:50.000Z"
+        },
+        {
+          "title": "下台后的黄仁勋可以来做光连接初创公司",
+          "url": "http://www.c-fol.net/news/7_202611/20261113120827.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-13T04:08:27.000Z"
+        },
+        {
+          "title": "新厂房新起点！武汉芯信光乔迁，国产全光交换机冲刺AI算力互联",
+          "url": "http://www.c-fol.net/news/7_202611/20261112232537.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-12T15:25:37.000Z"
+        },
+        {
+          "title": "CFCF AP 2026 主论坛落幕：光通信超级周期走向分化，东南亚算力成供应链新支点",
+          "url": "http://www.c-fol.net/news/7_202611/20261111174823.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-11T09:48:23.000Z"
+        },
+        {
+          "title": "三科创面对竞争与收购的新选择：从亚太CFCF的讨论说起",
+          "url": "http://www.c-fol.net/news/7_202611/20261110222019.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-10T14:20:19.000Z"
+        },
+        {
+          "title": "光器件全自动化产线所遇到的挑战：亚太CFCF的讨论",
+          "url": "http://www.c-fol.net/news/7_202611/20261109120008.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-09T04:00:08.000Z"
+        },
+        {
+          "title": "苏州牧晶智能二期厂房正式投产，国产光电封装装备产能再跃升",
+          "url": "http://www.c-fol.net/news/7_202611/20261109104033.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-09T02:40:33.000Z"
+        },
+        {
+          "title": "CFCF AP 2026泰国AI数据中心专场：电力供给或约束数据中心建设节奏与产业格局",
+          "url": "http://www.c-fol.net/news/7_202611/20261107193353.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-07T11:33:53.000Z"
+        },
+        {
+          "title": "CFCF AP 2026自动化专场:光通信自动化工厂是技术创新与产业发展的必然",
+          "url": "http://www.c-fol.net/news/7_202611/20261107190943.html",
+          "source": "光纤在线",
+          "publishedAt": "2026-11-07T11:09:43.000Z"
+        }
+      ]
+    },
+    "dev": {
+      "name": "软件开发",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "AI帮我生成了一个炫酷的3D大屏，上线3天就卡崩了",
+          "url": "https://juejin.cn/post/7708639137272102966",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "用了这 Skill，前端兄弟都觉得好",
+          "url": "https://juejin.cn/post/7708682938188578854",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "连AI自己也不愿意维护自己的屎山代码",
+          "url": "https://juejin.cn/post/7708565080221040683",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "真狠啊，DeepSeek 开放全家桶 API。",
+          "url": "https://juejin.cn/post/7708954185542172710",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "代码越来越便宜，判断力越来越贵：AI 时代的 Android 架构与协程避坑指南",
+          "url": "https://juejin.cn/post/7707957158462357546",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "如何让 AI 高效工作",
+          "url": "https://juejin.cn/post/7708627348664762394",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "DeepSeek Harness 实战与架构解析：让 Agent 从“会聊”到“能交付”",
+          "url": "https://juejin.cn/post/7708058421904392242",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "Flutter Native Interop 稳定了，Platform Channel 要退场了",
+          "url": "https://juejin.cn/post/7708728039933624363",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "Flutter Analyzer 系列坑推进，必看，AI 时代这玩意最吃你内存",
+          "url": "https://juejin.cn/post/7708010764016517147",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "为什么 agent 的 demo 都很惊艳，上了生产就不靠谱",
+          "url": "https://juejin.cn/post/7707938781526245391",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "用 AI 给娃做了一个识物游戏：一份 2.3MB 的单文件 HTML，126 张卡片、三种玩法，手机平板打开就能玩",
+          "url": "https://juejin.cn/post/7708941643550605354",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        },
+        {
+          "title": "Claude Code 过夜跑长任务实战：tmux、权限、验收，以及我为什么换到 ApexOne",
+          "url": "https://juejin.cn/post/7708760087800086563",
+          "source": "掘金",
+          "publishedAt": "2026-11-17T23:25:10.606Z"
+        }
+      ]
+    },
+    "security": {
+      "name": "网络安全",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "一个 4.17MB 的 JS 文件里，藏着整套加密协议",
+          "url": "https://www.freebuf.com/articles/web/512971.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "麦当劳iOS应用遭大规模推送通知攻击，引发ARTEX安全担忧",
+          "url": "https://www.freebuf.com/news/513009.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "N-able发布补丁修复N-central 17个漏洞，攻击者利用旧漏洞部署加密矿机",
+          "url": "https://www.freebuf.com/news/512937.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "macOS 27.3新增安全管控，限制AI应用无授权访问全量Mac数据",
+          "url": "https://www.freebuf.com/articles/system/512978.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "黑客利用AI厂商泄露密钥，44小时攻破10个梭子鱼云账户",
+          "url": "https://www.freebuf.com/news/512979.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "AI安全占网络安全种子轮交易超三分之一，Agent安全成核心投向",
+          "url": "https://www.freebuf.com/news/512954.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "FreeBuf早报 | Claude借助3美元Arduino破解32年车龄Jeep ECU；美国冻结朝鲜黑客盗取的27亿美元币安资产",
+          "url": "https://www.freebuf.com/news/512792.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "AI Agent 在红队实战中的落地与坑：一个 USENIX24 开源 Agent 的范围强制层实测",
+          "url": "https://www.freebuf.com/articles/ai-security/512791.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "藏身云端：利用 Amazon API 实现 Cobalt Strike Beacon 的 C2 通信",
+          "url": "https://www.freebuf.com/articles/512880.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "谷歌警告威胁行为者常态化用AI，网络攻击临近发展拐点",
+          "url": "https://www.freebuf.com/articles/ai-security/512869.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "谷歌披露AI框架可自动将补丁转为漏洞利用，全程无需人工干预",
+          "url": "https://www.freebuf.com/articles/ai-security/512831.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        },
+        {
+          "title": "日本10月网络事件达233起创纪录，1.85亿条个人记录涉险",
+          "url": "https://www.freebuf.com/articles/database/512780.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-17T22:30:58.037Z"
+        }
+      ]
+    },
+    "machinery": {
+      "name": "工程机械",
+      "count": 6,
+      "degraded": false,
+      "items": [
+        {
+          "title": "2026智能建造装备与应用发展大会在石家庄召开",
+          "url": "http://www.cncma.org/article/22815",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "2026年度机械工业科学技术奖工程机械行业获奖项目揭晓",
+          "url": "http://www.cncma.org/article/22800",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "协会领导赴 bC India 2026展会现场考察交流",
+          "url": "http://www.cncma.org/article/22767",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "绿智领航 共享卓越，BICES 2027新闻发布会在京召开",
+          "url": "http://www.cncma.org/article/22644",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "协会2026年首场新闻发布会在京召开",
+          "url": "http://www.cncma.org/article/22673",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "吴培国副会长兼秘书长受邀参加中力第十一届双11活动",
+          "url": "http://www.cncma.org/article/22868",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        }
+      ]
+    },
+    "chemical": {
+      "name": "化工",
+      "count": 2,
+      "degraded": false,
+      "items": [
+        {
+          "title": "历史首次！德银：“芯片美元”正取代“石油美元”，全球金融体系陷入“危险闭环”",
+          "url": "https://wallstreetcn.com/articles/3786065",
+          "source": "华尔街见闻",
+          "publishedAt": "2026-11-17T23:25:04.818Z"
+        },
+        {
+          "title": "财联社11月18日电，美国上周API原油库存 527.8万桶，预期-50万桶，前值896.8万桶。",
+          "url": "https://www.cls.cn/detail/2537263",
+          "source": "财联社",
+          "publishedAt": "2026-11-17T23:03:28.595Z"
+        }
+      ]
+    }
+  }
+}
