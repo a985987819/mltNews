@@ -1,18 +1,19 @@
 # mltNews · 行业热点新闻聚合站
 
-类 NewsNow 的分栏新闻看板：**8 个行业板块 × 每板块 10 条**，部署在 GitHub Pages，
-**每 3 小时**由 GitHub Actions 自动抓取一次并生成时间快照，零人工、零账号、零付费。
+类 NewsNow 的分栏新闻看板：**8 个行业板块 × 每板块 12 条**，部署在 GitHub Pages，
+**每小时整点**由 GitHub Actions 自动抓取一次并生成时间快照（静态列表页每 8 小时刷新），
+零人工、零账号、零付费。
 
 **线上地址**：https://a985987819.github.io/mltNews/
 
 ## 工作原理
 
 ```
-GitHub Actions（cron: 0 */3 * * * UTC = 北京 08/11/14/17/20/23/02/05 点）
+GitHub Actions（cron: 0 * * * * = 每小时整点）
   1. node scripts/fetch.mjs
        ├─ 读 config/sectors.yaml
-       ├─ NewsNow 公开 API / 静态页正则解析 / 关键词兜底
-       └─ 去重 → 置顶排序 → 截前 10 条 → 写 web/public/data/*.json
+       ├─ NewsNow 公开 API（约 22 个源）/ 静态页正则解析（8h 缓存限频）/ 关键词兜底
+       └─ 去重 → 置顶排序 → 截前 12 条 → 写 web/public/data/*.json
   2. git commit 数据文件并 push（快照随 git 历史永久留档）
   3. npm run build → GitHub Pages 重新部署
 
@@ -111,5 +112,5 @@ node -e "import('file://<本项目绝对路径>/scripts/lib/newsnow.mjs').then(m
 
 本站仅聚合各媒体公开发布的新闻标题与链接，所有内容版权归原作者及原媒体所有。点击标题将跳转至原始来源。本站不做内容存储与再分发，如有异议请联系删除。
 
-抓取约束：NewsNow 单源每 3 小时 1 次（每次运行 13 次请求）；静态列表页单站每日 8 次（3 小时
-1 次、串行间隔 ≥800ms、只抓单页、不遍历历史页）。
+抓取约束：NewsNow 各源每小时 1 次（每次运行 22 个请求，串行间隔 ≥800ms）；静态列表页单站
+每日 3 次（8 小时缓存限频、只抓单页、不遍历历史页）。

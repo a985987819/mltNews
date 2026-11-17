@@ -37,6 +37,32 @@ function writeJson(file, obj) {
   writeFileSync(file, JSON.stringify(obj, null, 2) + '\n', 'utf8');
 }
 
+const HTML_CACHE_FILE = path.join(ROOT, 'scripts', '.html-cache.json');
+
+// HTML 静态列表页更新慢（光纤在线/协会每天数篇），每小时抓一次毫无意义；
+// 每个源 fetchedAt 距今不足 html_refresh_hours 小时则复用上次结果（对源站保持礼貌）。
+// 缓存文件随仓库提交，跨运行、跨 CI 均生效。
+async function getHtmlItems(src, opts, refreshHours) {
+  const cache = loadJson(HTML_CACHE_FILE) || {};
+  const id = src.url;
+  const entry = cache[id];
+  if (
+    entry?.items?.length &&
+    entry.fetchedAt &&
+    Date.now() - Date.parse(entry.fetchedAt) < refreshHours * 3600 * 1000
+  ) {
+    return entry.items;
+  }
+  const items = await fetchHtmlSource(src, opts);
+  cache[id] = { fetchedAt: new Date().toISOString(), items };
+  try {
+    writeJson(HTML_CACHE_FILE, cache);
+  } catch {
+    /* 缓存写失败不影响主流程 */
+  }
+  return items;
+}
+
 // ── NewsNow 源的运行内缓存：每个 id 每次运行只发一次请求 ──
 // 同一源既是兜底池成员又是某板块主源（如 thepaper / 36kr-quick）时不重复请求；
 // 失败结果也缓存（本运行内不再重试，规格 12.5：不做重试风暴）。
@@ -65,7 +91,13 @@ async function getNewsNow(id, opts, delayMs) {
 
 async function main() {
   const cfg = parseYaml(readFileSync(path.join(ROOT, 'config', 'sectors.yaml'), 'utf8'));
-  const { per_sector = 10, history_days = 30, request_delay_ms = 800, user_agent } = cfg.global;
+  const {
+    per_sector = 10,
+    history_days = 2,
+    request_delay_ms = 800,
+    html_refresh_hours = 8,
+    user_agent,
+  } = cfg.global;
 
   // 北京时间的“现在”；每次运行产出一份小时级快照（key 如 2026-11-17T08）
   const nowMs = Date.now();
@@ -108,7 +140,9 @@ async function main() {
           reused.push(...all);
           if (remaining > 0) got = all.slice(0, Math.min(src.limit ?? per_sector, remaining));
         } else if (src.type === 'html') {
-          if (remaining > 0) got = await fetchHtmlSource(src, { userAgent: user_agent });
+          if (remaining > 0) {
+            got = await getHtmlItems(src, { userAgent: user_agent }, html_refresh_hours);
+          }
         } else if (src.type === 'keyword') {
           // 显式 keyword 源：纯内存过滤，不发请求
           if (remaining > 0) {

@@ -4,8 +4,9 @@ import type { DataIndex, NewsData } from '../types';
 const BASE = import.meta.env.BASE_URL;
 const cache = new Map<string, Promise<NewsData>>();
 
-export async function loadIndex(): Promise<DataIndex> {
-  const res = await fetch(`${BASE}data/index.json`);
+// bust=true 时绕过 HTTP 缓存（新快照轮询）
+export async function loadIndex(bust = false): Promise<DataIndex> {
+  const res = await fetch(`${BASE}data/index.json`, { cache: bust ? 'reload' : 'default' });
   if (!res.ok) throw new Error(`index.json HTTP ${res.status}`);
   return (await res.json()) as DataIndex;
 }

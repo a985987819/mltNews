@@ -1,11 +1,12 @@
-import { useEffect, useMemo, useState } from 'react';
-import type { DataIndex, NewsData } from './types';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import type { DataIndex, NewsData, SnapshotMeta } from './types';
 import { loadIndex, loadNewsData } from './lib/load';
 import TopBar from './components/TopBar';
 import SectorColumn from './components/SectorColumn';
 import Footer from './components/Footer';
 
 const THEME_KEY = 'mltnews-theme';
+const SNAP_POLL_MS = 10 * 60 * 1000; // 每 10 分钟探测一次是否有新快照
 
 function initialTheme(): 'light' | 'dark' {
   try {
@@ -21,6 +22,11 @@ function errMsg(e: unknown): string {
   return e instanceof Error ? e.message : String(e);
 }
 
+function snapLabel(s: SnapshotMeta): string {
+  const [, m, d] = s.date.split('-');
+  return `${Number(m)}月${Number(d)}日 ${s.time}时`;
+}
+
 export default function App() {
   const [index, setIndex] = useState<DataIndex | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -29,6 +35,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
   const [theme, setTheme] = useState<'light' | 'dark'>(initialTheme);
+  const [newSnap, setNewSnap] = useState<SnapshotMeta | null>(null);
   const [, setTick] = useState(0); // 每分钟自增一次，驱动相对时间重新渲染
 
   // 深色模式：CSS 变量 + localStorage，白色为默认（规格 7.4.6）
@@ -111,6 +118,22 @@ export default function App() {
     return () => window.removeEventListener('resize', setVar);
   }, []);
 
+  // 每 10 分钟探测新快照（每小时整点 Actions 会产出一份）；发现后不自动切换，由用户点击加载
+  const snapKeyRef = useRef('');
+  snapKeyRef.current = snapKey;
+  useEffect(() => {
+    if (!index) return;
+    const t = window.setInterval(() => {
+      loadIndex(true)
+        .then((idx) => {
+          setIndex(idx);
+          setNewSnap(idx.latest !== snapKeyRef.current ? (idx.snapshots.find((s) => s.key === idx.latest) ?? null) : null);
+        })
+        .catch(() => undefined); // 轮询失败静默，不打扰阅读
+    }, SNAP_POLL_MS);
+    return () => window.clearInterval(t);
+  }, [index]);
+
   // 刷新：只重读 JSON，不重新抓取（规格 1.2）
   const refresh = () => {
     if (!index) return;
@@ -180,6 +203,29 @@ export default function App() {
         refreshing={loading}
       />
       {error && <div className="error-banner">加载失败：{error}（当前展示上次成功的数据）</div>}
+      {newSnap && (
+        <div className="new-snap-banner" role="status">
+          <span>发现新快照（{snapLabel(newSnap)}），点击查看</span>
+          <button
+            className="btn"
+            onClick={() => {
+              setSnapKey(newSnap.key);
+              setNewSnap(null);
+            }}
+          >
+            查看
+          </button>
+        </div>
+      )}
+      {!searching && index && index.sectorOrder.length > 0 && (
+        <nav className="sector-nav" aria-label="板块导航">
+          {index.sectorOrder.map((k) => (
+            <a key={k} href={`#sector-${k}`}>
+              {index.sectorNames[k] ?? k}
+            </a>
+          ))}
+        </nav>
+      )}
       {searching && matchCount > 0 && (
         <div className="search-info">
           找到 {matchCount} 条匹配「{query.trim()}」，按 Esc 清空
@@ -196,10 +242,16 @@ export default function App() {
             </div>
           ))}
         </main>
-      ) : filtered && columns.length > 0 ? (
+      ) : data && filtered && columns.length > 0 ? (
         <main className="board">
           {columns.map((key) => (
-            <SectorColumn key={key} sectorKey={key} sector={filtered[key]} query={query} />
+            <SectorColumn
+              key={key}
+              sectorKey={key}
+              sector={filtered[key]}
+              query={query}
+              generatedAt={data.generatedAt}
+            />
           ))}
         </main>
       ) : (

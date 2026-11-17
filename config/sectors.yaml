@@ -3,9 +3,10 @@
 # 这是用户唯一需要维护的文件。改动此文件后，下次 Actions 运行（北京时间每天 08:00）即生效。
 # ─────────────────────────────────────────────
 global:
-  per_sector: 10          # 每板块最终条数
-  history_days: 7         # 快照文件保留天数（每 3 小时一份；git 提交历史永久留档）
+  per_sector: 12          # 每板块最终条数
+  history_days: 2         # 快照文件保留天数（每小时 1 份；git 提交历史永久留档）
   request_delay_ms: 800   # 请求间隔（串行，不并发）
+  html_refresh_hours: 8   # 静态列表页（光纤在线/协会）每 8 小时最多抓 1 次，其余运行复用缓存
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
 # 兜底数据池（规格 3.4），所有板块共用，每次抓取只拉一次
@@ -30,9 +31,12 @@ sectors:
     sources:
       - type: newsnow
         id: thepaper
-        limit: 10
+        limit: 12
       - type: newsnow
         id: cankaoxiaoxi
+        limit: 8
+      - type: newsnow
+        id: zaobao
         limit: 6
 
   - key: finance
@@ -41,12 +45,15 @@ sectors:
     sources:
       - type: newsnow
         id: cls-hot
-        limit: 10
+        limit: 12
       - type: newsnow
         id: wallstreetcn-hot
-        limit: 6
+        limit: 8
       - type: newsnow
         id: jin10
+        limit: 8
+      - type: newsnow
+        id: gelonghui
         limit: 6
 
   - key: ai
@@ -55,10 +62,13 @@ sectors:
     sources:
       - type: newsnow
         id: aihot
-        limit: 10
+        limit: 12
       - type: newsnow
         id: 36kr-quick
-        limit: 6
+        limit: 8
+      - type: newsnow
+        id: solidot
+        limit: 8
 
   - key: optical
     name: 光通信
@@ -72,7 +82,7 @@ sectors:
         groups: {link: 1, time: 2, title: 3}
         link_prefix: "http:"
         time_format: "YYYYMMDDhhmmss"
-        limit: 10
+        limit: 12
 
   - key: dev
     name: 软件开发
@@ -80,12 +90,21 @@ sectors:
     sources:
       - type: newsnow
         id: juejin
-        limit: 10
+        limit: 12
+      - type: newsnow
+        id: ithome
+        limit: 8
       - type: newsnow
         id: v2ex
-        limit: 6
+        limit: 8
       - type: newsnow
         id: github-trending-today
+        limit: 8
+      - type: newsnow
+        id: hackernews
+        limit: 6
+      - type: newsnow
+        id: sspai
         limit: 6
 
   - key: security
@@ -94,7 +113,10 @@ sectors:
     sources:
       - type: newsnow
         id: freebuf
-        limit: 10
+        limit: 12
+      - type: newsnow
+        id: chongbuluo
+        limit: 8
 
   - key: machinery
     name: 工程机械

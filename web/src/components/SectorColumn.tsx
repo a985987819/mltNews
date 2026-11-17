@@ -5,16 +5,17 @@ interface Props {
   sectorKey: string;
   sector: SectorData;
   query: string;
+  generatedAt: string;
 }
 
-export default function SectorColumn({ sectorKey, sector, query }: Props) {
+export default function SectorColumn({ sectorKey, sector, query, generatedAt }: Props) {
   return (
-    <section className="sector">
+    <section id={`sector-${sectorKey}`} className="sector">
       <header className="sector-head">
         <h2 className="sector-name">{sector.name}</h2>
         <span className="sector-count">{sector.count} 条</span>
         {sector.degraded && (
-          <span className="degraded-tag" title="今日该板块抓取失败，当前展示的是此前保留的数据">
+          <span className="degraded-tag" title="本次抓取失败，当前展示的是上一个快照的数据">
             数据可能延迟
           </span>
         )}
@@ -24,7 +25,13 @@ export default function SectorColumn({ sectorKey, sector, query }: Props) {
       ) : (
         <ol className="sector-list">
           {sector.items.map((item, i) => (
-            <NewsItem key={`${sectorKey}-${i}`} item={item} rank={i + 1} query={query} />
+            <NewsItem
+              key={`${sectorKey}-${i}`}
+              item={item}
+              rank={i + 1}
+              query={query}
+              generatedAt={generatedAt}
+            />
           ))}
         </ol>
       )}
