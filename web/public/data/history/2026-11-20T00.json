@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 2,
+  "snapshotKey": "2026-11-20T00",
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-19T16:26:12.294Z",
+  "sectors": {
+    "politics": {
+      "name": "时政",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "详讯丨习近平主持亚太经合组织第三十三次领导人非正式会议并发表重要讲话",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34509808",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "详讯丨习近平主持中俄美元首会晤",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34513086",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "中俄美元首和平宣言",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34512539",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "详讯丨习近平会见美国总统特朗普",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34511524",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "马上测丨知网、万方、维普三平台同文实测：AI生成率检测结果悬殊，原创内容遭冤",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34503761",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "言短意长｜一个土生土长的中国概念，为什么深圳翻译出来就是不一样",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34508425",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "APEC现场｜深圳市民街头偶遇多国政要：逛超市、尝车厘子、练八段锦……",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34509387",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "地标是如何炼成的｜从“南京长江大桥”认识南京这座城",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34491581",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "中南大学通报湘雅二医院、湘雅医院AI论文争议：存在学术不端，多人被处理​​​​",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34509594",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "专访｜澳专家：APEC开AI专题会是积极信号，至少先迈出一小步",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34505131",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "马上评｜“老人拆墙让路”事件的三重舆论启示",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34509394",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        },
+        {
+          "title": "刘金国人民日报撰文：常态化整治群众身边不正之风和腐败问题",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34507872",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-19T16:26:15.906Z"
+        }
+      ]
+    },
+    "finance": {
+      "name": "金融",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "APEC时间，中国硬科技踏浪而来",
+          "url": "https://www.cls.cn/detail/2539221",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "详讯丨习近平会见美国总统特朗普",
+          "url": "https://www.cls.cn/detail/2538998",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "加息风暴来袭！黄金一度失守3700美元 不再是避险天堂？",
+          "url": "https://www.cls.cn/detail/2539006",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "习近平就大国如何正确相处提出4点看法",
+          "url": "https://www.cls.cn/detail/2539074",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "详讯丨习近平主持中俄美元首会晤",
+          "url": "https://www.cls.cn/detail/2539282",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "【每日收评】上证50探底回升小幅收红，全市场超4800股飘绿，光刻胶、先进封装概念逆势活跃",
+          "url": "https://www.cls.cn/detail/2539034",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "Anthropic IPO提振市场情绪 美股三大股指期货齐涨 | 今夜看点",
+          "url": "https://www.cls.cn/detail/2539359",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "490亿借道股票型ETF进场！五只产品贡献近九成子弹，这些主题风格型也获净申购",
+          "url": "https://www.cls.cn/detail/2539139",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "【焦点复盘】科创50三连阳收复20日线，全市场超110股跌超10%，半导体产业链现极致分化",
+          "url": "https://www.cls.cn/detail/2539096",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "中俄美元首会晤高清大图",
+          "url": "https://www.cls.cn/detail/2539122",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "深市再掀一波密集回购增持，宁德时代回购近两亿",
+          "url": "https://www.cls.cn/detail/2539402",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        },
+        {
+          "title": "史上规模最大IPO今日上市，资金面冲击有多大？五大变量浮现",
+          "url": "https://www.cls.cn/detail/2539361",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T15:57:29.557Z"
+        }
+      ]
+    },
+    "ai": {
+      "name": "AI",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "Anthropic CEO Dario Amodei 与联合创始人 Daniela Amodei 参与 Nasdaq 开市敲钟",
+          "url": "https://aihot.news/items/wy4i94u2e6f4gl8p0fapqxcbg",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "Hugging Face CEO 祝贺 Anthropic 并呼吁更多开源 AI",
+          "url": "https://aihot.news/items/w7a0eirk0am4lbyo1iy7dw00y",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "Anthropic 股票或以每股 104 美元开盘，高于 83 美元 IPO 定价约 25%",
+          "url": "https://aihot.news/items/mmwz8pv1im8uklob62bq34kii",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "Grok Bot 新增拨打电话功能",
+          "url": "https://aihot.news/items/nc3dfylzwjw2q1up96a2king6",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "Mustafa Suleyman 谈 Cambridge Dictionary 年度词 Human 与人本主义 AI",
+          "url": "https://aihot.news/items/lum9jcnyair1dm9i2pfc24sqf",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "ChatGPT 上线 Live Dictation：边说边转写，取消 10 分钟录音限制",
+          "url": "https://aihot.news/items/jvd5fmoq8nwj0jh6umjgc6rmf",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "CMU 研究者提出可证明安全的可纠正智能体构建并发布 ROGUE 基准",
+          "url": "https://aihot.news/items/zjyw3s62owys6foy446wagqnf",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "吴泳铭：阿里 2032 年全球数据中心规模超 20GW 目标或下调",
+          "url": "https://aihot.news/items/ajut0ndufk85vhni8xx4rrb8q",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "Unsloth 与 AMD 合作支持 NPU 推理",
+          "url": "https://aihot.news/items/j7zv6y0ua9cmngcd0ddjvhbq2",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "Arena 推出 Coding Index，GPT-6.2 Astra (Max) 以 1338 分位列第 3",
+          "url": "https://aihot.news/items/qhalr869r5v7u72ggw0z3rg9o",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "https://x.com/james_y_zou/status/2100648966866231592",
+          "url": "https://aihot.news/items/uqx0drapagf6vogivlb4qvdgt",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        },
+        {
+          "title": "https://x.com/clairevo/status/2069129613427831169",
+          "url": "https://aihot.news/items/hlcxfbuvzgrfarh1ty3pheedx",
+          "source": "AI热点",
+          "publishedAt": "2026-11-19T15:59:37.899Z"
+        }
+      ]
+    },
+    "optical": {
+      "name": "光通信",
+      "count": 1,
+      "degraded": true,
+      "items": [
+        {
+          "title": "CPO概念午后震荡反弹 青山纸业涨停",
+          "url": "https://www.cls.cn/detail/2538762",
+          "source": "财联社",
+          "publishedAt": "2026-11-19T06:09:02.166Z"
+        }
+      ]
+    },
+    "dev": {
+      "name": "软件开发",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "永别了，程序员！(转）",
+          "url": "https://juejin.cn/post/7705987138957328427",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "用了这 Skill，前端兄弟都觉得好",
+          "url": "https://juejin.cn/post/7708682938188578854",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "真狠啊，DeepSeek 开放全家桶 API。",
+          "url": "https://juejin.cn/post/7708954185542172710",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "GPT-6.2 Astra 发布了，但口碑崩了。。。",
+          "url": "https://juejin.cn/post/7709318936996298790",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "面试了20个前端，我发现高薪的都不怎么拼“底层原理”",
+          "url": "https://juejin.cn/post/7709222846370807827",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "Flutter Native Interop 稳定了，Platform Channel 要退场了",
+          "url": "https://juejin.cn/post/7708728039933624363",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "用 AI 给娃做了一个识物游戏：一份 2.3MB 的单文件 HTML，126 张卡片、三种玩法，手机平板打开就能玩",
+          "url": "https://juejin.cn/post/7708941643550605354",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "Claude Code 过夜跑长任务实战：tmux、权限、验收，以及我为什么换到 ApexOne",
+          "url": "https://juejin.cn/post/7708760087800086563",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "苹果开发者注意，请在2027年1月31日前完成合规验证，否则中国区可能下架",
+          "url": "https://juejin.cn/post/7709024949851275307",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "中年程序员，开始喜欢做减法",
+          "url": "https://juejin.cn/post/7709049532556017673",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "黄仁勋想回英伟达却被拒：创始人 CEO 辞职后为什么回不来，董事会继任机制全拆解",
+          "url": "https://juejin.cn/post/7709080191914672171",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        },
+        {
+          "title": "REA 靠边站，逆向圈又一新王诞生了",
+          "url": "https://juejin.cn/post/7709320849258364938",
+          "source": "掘金",
+          "publishedAt": "2026-11-19T15:57:47.023Z"
+        }
+      ]
+    },
+    "security": {
+      "name": "网络安全",
+      "count": 12,
+      "degraded": false,
+      "items": [
+        {
+          "title": "微软官方Python Agent框架遭供应链投毒，PyPI恶意版本窃取云与CI/CD凭证",
+          "url": "https://www.freebuf.com/articles/development/513582.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "BackBox Linux 10正式发布，新增渗透工具并适配Ubuntu 26.04",
+          "url": "https://www.freebuf.com/news/513577.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "AI发现nginx五个高危漏洞，链式利用可提权至root",
+          "url": "https://www.freebuf.com/news/513544.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "漏洞管理存在方向偏差，网络安全行业仍在解决错误问题",
+          "url": "https://www.freebuf.com/articles/es/513548.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "AuditTeam勒索团伙伪装安全审计人员，利用杀软驱动终止EDR进程",
+          "url": "https://www.freebuf.com/news/513506.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "员工自建AI Agent继承账号访问权限，使用行为缺乏有效监管",
+          "url": "https://www.freebuf.com/articles/ai-security/513505.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "攻击者滥用CyberPower UPS软件，执行SYSTEM命令转储活动目录数据",
+          "url": "https://www.freebuf.com/news/513488.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "NIST证实量子位置验证技术可行，可阻断远程黑客入侵",
+          "url": "https://www.freebuf.com/articles/513434.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "AI发现Nginx“断网级”漏洞，含十年未授权RCE缺陷",
+          "url": "https://www.freebuf.com/news/513431.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "Apache Roller RCE漏洞遭在野活跃利用，CVSS9.8分无需认证即可攻击",
+          "url": "https://www.freebuf.com/news/513400.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "FreeBuf早报 | Google披露俄罗斯黑客攻击路径；麦当劳iOS应用遭大规模推送通知攻击",
+          "url": "https://www.freebuf.com/news/513260.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        },
+        {
+          "title": "AI渗透框架CyberStrikeAI单会话执行221次工具操作，无人工审批",
+          "url": "https://www.freebuf.com/articles/ai-security/513385.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-19T15:32:42.292Z"
+        }
+      ]
+    },
+    "machinery": {
+      "name": "工程机械",
+      "count": 6,
+      "degraded": false,
+      "items": [
+        {
+          "title": "2026智能建造装备与应用发展大会在石家庄召开",
+          "url": "http://www.cncma.org/article/22815",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "2026年度机械工业科学技术奖工程机械行业获奖项目揭晓",
+          "url": "http://www.cncma.org/article/22800",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "协会领导赴 bC India 2026展会现场考察交流",
+          "url": "http://www.cncma.org/article/22767",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "绿智领航 共享卓越，BICES 2027新闻发布会在京召开",
+          "url": "http://www.cncma.org/article/22644",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "协会2026年首场新闻发布会在京召开",
+          "url": "http://www.cncma.org/article/22673",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        },
+        {
+          "title": "苏子孟会长受邀参加2026合力供应商大会",
+          "url": "http://www.cncma.org/article/22873",
+          "source": "中国工程机械工业协会",
+          "publishedAt": null
+        }
+      ]
+    },
+    "chemical": {
+      "name": "化工",
+      "count": 1,
+      "degraded": false,
+      "items": [
+        {
+          "title": "国际能源署与高盛预测：全球石油市场转向供应过剩",
+          "url": "https://ckxxapp.ckxx.net/pages/2026/11/19/0101864bcf9b4c798c8aa0190229e5ec.html",
+          "source": "参考消息",
+          "publishedAt": "2026-11-19T02:12:33.000Z"
+        }
+      ]
+    }
+  }
+}
