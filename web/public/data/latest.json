@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "snapshotKey": "2026-11-20T14",
+  "snapshotKey": "2026-11-20T23",
   "date": "2026-11-20",
-  "generatedAt": "2026-11-20T06:25:53.770Z",
+  "generatedAt": "2026-11-20T15:57:56.104Z",
   "sectors": {
     "politics": {
       "name": "时政",
@@ -10,76 +10,76 @@
       "degraded": false,
       "items": [
         {
-          "title": "详讯丨习近平主持中俄美元首会晤",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34513086",
-          "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
-        },
-        {
-          "title": "中俄美元首和平宣言",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34512539",
-          "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
-        },
-        {
-          "title": "详讯丨习近平会见美国总统特朗普",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34511524",
-          "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
-        },
-        {
           "title": "“知网AI检出率暴涨”背后：存疑的算法、困惑的作者与AI辅助思考的边界",
           "url": "https://www.thepaper.cn/newsDetail_forward_34513875",
           "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
+          "publishedAt": "2026-11-20T15:57:59.550Z"
+        },
+        {
+          "title": "经纬度｜锚定品质化消费需求，培育银发经济新增长点",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34517959",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-20T15:57:59.550Z"
         },
         {
           "title": "从“双头虾”到一万张鸟类贴纸，“AI泔水”正在污染知识",
           "url": "https://www.thepaper.cn/newsDetail_forward_34511494",
           "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
+          "publishedAt": "2026-11-20T15:57:59.550Z"
         },
         {
-          "title": "美国总统特朗普：美国不支持“台独”",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34512187",
+          "title": "环球时报快评：高市是时候收回“台湾有事就是日本有事”错误言论了",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34518683",
           "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
-        },
-        {
-          "title": "马上评｜15元起步，扫共享单车不该是开盲盒",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34510107",
-          "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
-        },
-        {
-          "title": "专访全球甲烷中心CEO、智利前环境部长马塞洛：期待中国甲烷减排经验惠及全球南方",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34506159",
-          "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
+          "publishedAt": "2026-11-20T15:57:59.550Z"
         },
         {
           "title": "《谷雨》：一部主创阵容很强的作品，为何没能换来认可？",
           "url": "https://www.thepaper.cn/newsDetail_forward_34514219",
           "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
+          "publishedAt": "2026-11-20T15:57:59.550Z"
         },
         {
-          "title": "长鑫科技回购上限拟提至50亿元，最高40亿元股份注销减少注册资本",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34512927",
+          "title": "余承东：用L3开车能睡觉，别睡过去就行",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34521221",
           "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
+          "publishedAt": "2026-11-20T15:57:59.550Z"
         },
         {
-          "title": "“高管遭老板性侵后被开除”案一审宣判：公司构成违法解除，法院支持补发停工留薪期工资",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34510704",
+          "title": "言短意长｜“东鹏饮料”被捐进高中校牌，何必这样直白",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34522347",
           "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
+          "publishedAt": "2026-11-20T15:57:59.550Z"
         },
         {
           "title": "中俄美元首深圳首聚：台前四点宣言与幕后外交细节｜907编辑部",
           "url": "https://www.thepaper.cn/newsDetail_forward_34515368",
           "source": "澎湃新闻",
-          "publishedAt": "2026-11-20T06:25:57.589Z"
+          "publishedAt": "2026-11-20T15:57:59.550Z"
+        },
+        {
+          "title": "大外交｜中俄美元首会晤“载入史册”，专家：为新型大国关系提供明确路径",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34516762",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-20T15:57:59.550Z"
+        },
+        {
+          "title": "王毅介绍亚太经合组织第三十三次领导人非正式会议及相关活动成果",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34515595",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-20T15:57:59.550Z"
+        },
+        {
+          "title": "APEC中国时间｜超出计划的访问，特朗普在深圳的27小时",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34518388",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-20T15:57:59.550Z"
+        },
+        {
+          "title": "澎湃读报丨聚焦APEC及中俄美元首历史性会晤，主要媒体版面速览",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34516582",
+          "source": "澎湃新闻",
+          "publishedAt": "2026-11-20T15:57:59.550Z"
         }
       ]
     },
@@ -89,76 +89,76 @@
       "degraded": false,
       "items": [
         {
-          "title": "【早报】高开低走，深夜美股大跳水；Anthropic上市首秀收涨17%；黄金、白银，大幅走弱",
-          "url": "https://www.cls.cn/detail/2539556",
+          "title": "黄仁勋据称将创办新的半导体公司 或将筹资500亿用于创业",
+          "url": "https://www.cls.cn/detail/2540050",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "史上最大IPO落地！Anthropic筹得813亿美元 股价首日收涨17%",
-          "url": "https://www.cls.cn/detail/2539539",
+          "title": "两部门联合公布4起编造传播资本市场虚假信息典型案例",
+          "url": "https://www.cls.cn/detail/2540166",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "大宗商品全军覆没、全球股市步履蹒跚！一文读懂：市场在交易什么？",
-          "url": "https://www.cls.cn/detail/2539619",
+          "title": "一日四家集中示警！金价创14个月新低，四季度多家银行持续加大贵金属业务风险提示",
+          "url": "https://www.cls.cn/detail/2540426",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "美国行业协会拉响警报：全球电路板短缺危机正在蔓延",
-          "url": "https://www.cls.cn/detail/2539523",
+          "title": "一日27家，A股回购公告密集来袭，16家公司拟回购不低于1亿元",
+          "url": "https://www.cls.cn/detail/2540477",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "美股收盘：高开低走三大指数重挫2% 科技巨头集体走弱英伟达再跌3%",
-          "url": "https://www.cls.cn/detail/2539544",
+          "title": "近30股今日逆势年内新高！半数总市值超5000亿元，这7只万亿巨无霸在列",
+          "url": "https://www.cls.cn/detail/2540288",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "胡塞武装袭击致沙特主权基金大楼受损 贵金属价格重挫银价跌近5%  | 环球市场",
-          "url": "https://www.cls.cn/detail/2539562",
+          "title": "硬核数据揭秘！历史最大IPO首日：散户不再追新了？",
+          "url": "https://www.cls.cn/detail/2539945",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "告别跑分竞赛：国产AI产业，比拼走向“Token产出效率”|行业观察",
-          "url": "https://www.cls.cn/detail/2539630",
+          "title": "英伟达三季报落地，A股入链企业影响多大？券商观点落地",
+          "url": "https://www.cls.cn/detail/2539928",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "阿里云外部经常性收入增长67% 吴泳铭：近两年中国市场算力尤为紧缺",
-          "url": "https://www.cls.cn/detail/2539407",
+          "title": "美股期指齐跌 纳指期货跌近2% Anthropic盘前跌逾10%  | 今夜看点",
+          "url": "https://www.cls.cn/detail/2540530",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "Anthropic上市为何没能“救”AI行情？华尔街热议：下周一或成关键窗口！",
-          "url": "https://www.cls.cn/detail/2539731",
+          "title": "【焦点复盘】沪指尾盘回升终结日线6连阴，全市场超300股跌逾9%，芯片产业链全天低迷",
+          "url": "https://www.cls.cn/detail/2540250",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "特朗普9月调仓披露：买入英伟达、Palantir、SpaceX 恰逢大额联邦合同落地前后",
-          "url": "https://www.cls.cn/detail/2539601",
+          "title": "事关AI交易！得州候任州长发声：不讨厌数据中心，期待与马斯克合作",
+          "url": "https://www.cls.cn/detail/2540115",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "深市再掀一波密集回购增持，宁德时代回购近两亿",
-          "url": "https://www.cls.cn/detail/2539402",
+          "title": "【每日收评】上证50指数尾盘异动收红，红利板块逆势走强，多只权重创下历史新高",
+          "url": "https://www.cls.cn/detail/2540155",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         },
         {
-          "title": "11月20日投资避雷针：美三大股指高开低走均跌超2% AMD遭做空重挫近8%",
-          "url": "https://www.cls.cn/detail/2539593",
+          "title": "贾国龙又“上新”了！这次改卖火锅，人均消费102元",
+          "url": "https://www.cls.cn/detail/2539903",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:05:05.007Z"
+          "publishedAt": "2026-11-20T15:58:02.972Z"
         }
       ]
     },
@@ -168,76 +168,76 @@
       "degraded": false,
       "items": [
         {
-          "title": "高通携手 Cirrascale 启动 Dragonfly AI200 推理加速器客户评估",
-          "url": "https://aihot.news/items/syl2h5owiylbnovitaiy2q92g",
+          "title": "Apple 加入设备控制型 AI Agent 竞赛，macOS 27.3 却抬高第三方 Agent 接入门槛",
+          "url": "https://aihot.news/items/vtrhmqchw6gf6a4msrjwd6ym1",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "Gemini 4 Neon 现已登陆 OpenClaw",
-          "url": "https://aihot.news/items/qcghhmfeyxhlpben7hwbffvd1",
+          "title": "TechCrunch Equity 播客讨论 Nvidia 罢免黄仁勋风波后续与 H200 停售中国",
+          "url": "https://aihot.news/items/f69sv5r61uvfloc7f68extgix",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "千问APP本月发出超4万次心梗紧急就诊提醒，呼吁别跟它“顶嘴”",
-          "url": "https://aihot.news/items/cuin7dwmy3chgsso8p6b1ipvu",
+          "title": "Nvidia 拟至少 5 亿美元收购扩散语言模型初创 Inception",
+          "url": "https://aihot.news/items/obf096ur6yrlspsj5b7o5do4t",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "DeepSeek Harness 发布100天，作者分享13个实用插件玩法",
-          "url": "https://aihot.news/items/amx0tnq9rthd6ssx81np25ldc",
+          "title": "Databricks 发布覆盖 70 个行业的交互式参考架构板",
+          "url": "https://aihot.news/items/lqw7dbzzzgtigebyn9so6lped",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "Nick Bostrom 论文测算：只要 AI 灭绝风险低于 97%，尽快推出超级智能可提高当代人预期寿命",
-          "url": "https://aihot.news/items/i6cpo955oidg8h7nokm6fhmdv",
+          "title": "Gemini 4 Neon 纽约霓虹招牌搜寻",
+          "url": "https://aihot.news/items/jtvhh0wlp1yk5eyt2seqigb7e",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "腾讯混元开放 Hy4 权重",
-          "url": "https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
+          "title": "PixVerse 提示词加风让 AI 视频更生动",
+          "url": "https://aihot.news/items/w6nuhxa8ogiia7aw7g0kzgqh0",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "腾讯混元 Hy4 正式开源，混元 LLM 系列实现全量开放",
-          "url": "https://aihot.news/items/zlcn6itw5qbfy7doffiocum2e",
+          "title": "Gary Marcus 称 Anthropic 股价破发，AI 股五个月跌超 50%",
+          "url": "https://aihot.news/items/m3cbwzgciod0tgfsgj343aoqn",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "腾讯混元 Hy4 正式开源并发布 System Card",
-          "url": "https://aihot.news/items/zkhdsir848uqwlf6ibuol1eb6",
+          "title": "PixVerse 总结与 OpenAI Prompt to Production 直播的五个要点",
+          "url": "https://aihot.news/items/u3otb5cx9n1kqaj11ihmx7246",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "Gemini 4 全系列使用与避雷教程：两个提示词修复 Antigravity 的 swarm 和 Orchestrator 坑",
-          "url": "https://aihot.news/items/q18tl9px61xtbm0x7djdx3er7",
+          "title": "三星电子高管：Neocloud 风险有限，AI 投资基于实际需求",
+          "url": "https://aihot.news/items/tdzwr4n3yl6u97bzhv0mky7n0",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "Simon Willison 谈 ChatPRD 遭遇的 token 滥用问题",
-          "url": "https://aihot.news/items/kr38rsh6t0btykt81y31xoz9k",
+          "title": "Air Street Capital 领投 LATO 470 万美元种子轮",
+          "url": "https://aihot.news/items/mxl3w27h6vggqxs376q4rtfx8",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "Conductor 支持内联渲染 Artifacts",
-          "url": "https://aihot.news/items/jo57egre6lv5jogs1rg9oxw1e",
+          "title": "Mistral CEO 称强大 AI 模型应回归公共所有",
+          "url": "https://aihot.news/items/fjr0o32ai0mnkhnkcx5sg7lrj",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         },
         {
-          "title": "Meta Muse 推出邮箱功能，可代用户收发邮件",
-          "url": "https://aihot.news/items/yi033i5qjc5oxzlvk2hyl67e2",
+          "title": "Hugging Face 每月分发近 1EB 模型数据",
+          "url": "https://aihot.news/items/ai2c1jqu7h17rcovo3vvux76s",
           "source": "AI热点",
-          "publishedAt": "2026-11-20T06:26:05.596Z"
+          "publishedAt": "2026-11-20T15:34:47.255Z"
         }
       ]
     },
@@ -263,73 +263,73 @@
           "title": "永别了，程序员！(转）",
           "url": "https://juejin.cn/post/7705987138957328427",
           "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
+          "publishedAt": "2026-11-20T15:31:02.995Z"
         },
         {
           "title": "GPT-6.2 Astra 发布了，但口碑崩了。。。",
           "url": "https://juejin.cn/post/7709318936996298790",
           "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
+          "publishedAt": "2026-11-20T15:31:02.995Z"
         },
         {
           "title": "面试了20个前端，我发现高薪的都不怎么拼“底层原理”",
           "url": "https://juejin.cn/post/7709222846370807827",
           "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
-        },
-        {
-          "title": "用 AI 给娃做了一个识物游戏：一份 2.3MB 的单文件 HTML，126 张卡片、三种玩法，手机平板打开就能玩",
-          "url": "https://juejin.cn/post/7708941643550605354",
-          "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
-        },
-        {
-          "title": "黄仁勋想回英伟达却被拒：创始人 CEO 辞职后为什么回不来，董事会继任机制全拆解",
-          "url": "https://juejin.cn/post/7709080191914672171",
-          "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
-        },
-        {
-          "title": "分库分表要被淘汰了？",
-          "url": "https://juejin.cn/post/7709495049776480294",
-          "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
-        },
-        {
-          "title": "Claude Code 过夜跑长任务实战：tmux、权限、验收，以及我为什么换到 ApexOne",
-          "url": "https://juejin.cn/post/7708760087800086563",
-          "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
-        },
-        {
-          "title": "中年程序员，开始喜欢做减法",
-          "url": "https://juejin.cn/post/7709049532556017673",
-          "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
-        },
-        {
-          "title": "苹果开发者注意，请在2027年1月31日前完成合规验证，否则中国区可能下架",
-          "url": "https://juejin.cn/post/7709024949851275307",
-          "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
+          "publishedAt": "2026-11-20T15:31:02.995Z"
         },
         {
           "title": "Android 工程师的技术信仰崩塌史",
           "url": "https://juejin.cn/post/7709344829042409507",
           "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
+          "publishedAt": "2026-11-20T15:31:02.995Z"
         },
         {
-          "title": "REA 靠边站，逆向圈又一新王诞生了",
-          "url": "https://juejin.cn/post/7709320849258364938",
+          "title": "黄仁勋想回英伟达却被拒：创始人 CEO 辞职后为什么回不来，董事会继任机制全拆解",
+          "url": "https://juejin.cn/post/7709080191914672171",
           "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
+          "publishedAt": "2026-11-20T15:31:02.995Z"
+        },
+        {
+          "title": "分库分表要被淘汰了？",
+          "url": "https://juejin.cn/post/7709495049776480294",
+          "source": "掘金",
+          "publishedAt": "2026-11-20T15:31:02.995Z"
+        },
+        {
+          "title": "中年程序员，开始喜欢做减法",
+          "url": "https://juejin.cn/post/7709049532556017673",
+          "source": "掘金",
+          "publishedAt": "2026-11-20T15:31:02.995Z"
         },
         {
           "title": "为了快 30 倍，我把构建工具换成了 Rust，结果团队差点连班都加不了",
           "url": "https://juejin.cn/post/7709679151841722409",
           "source": "掘金",
-          "publishedAt": "2026-11-20T06:07:51.148Z"
+          "publishedAt": "2026-11-20T15:31:02.995Z"
+        },
+        {
+          "title": "REA 靠边站，逆向圈又一新王诞生了",
+          "url": "https://juejin.cn/post/7709320849258364938",
+          "source": "掘金",
+          "publishedAt": "2026-11-20T15:31:02.995Z"
+        },
+        {
+          "title": "iOS for Web ，把原生 iOS App 跑到进浏览器里面，倒反天罡",
+          "url": "https://juejin.cn/post/7709530253697908778",
+          "source": "掘金",
+          "publishedAt": "2026-11-20T15:31:02.995Z"
+        },
+        {
+          "title": "太狠了！GitHub 5.6 万 Star，让 AI 直接操控 Chrome 调试",
+          "url": "https://juejin.cn/post/7709431516912943140",
+          "source": "掘金",
+          "publishedAt": "2026-11-20T15:31:02.995Z"
+        },
+        {
+          "title": "AI 热点日报（2026-11-18）：OpenAI 发布 GPT-6.2，APEC 峰会聚焦 AI，AI 制药融资创新高",
+          "url": "https://juejin.cn/post/7709030297351094335",
+          "source": "掘金",
+          "publishedAt": "2026-11-20T15:31:02.995Z"
         }
       ]
     },
@@ -339,76 +339,76 @@
       "degraded": false,
       "items": [
         {
+          "title": "攻击者主动扫描LiteLLM AI服务器，漏洞链可实现无认证RCE",
+          "url": "https://www.freebuf.com/articles/ai-security/513748.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-20T12:10:05.245Z"
+        },
+        {
+          "title": "AI红队提示注入测试存冗余，大样本重训反降Agent防御能力",
+          "url": "https://www.freebuf.com/articles/ai-security/513717.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-20T12:10:05.245Z"
+        },
+        {
+          "title": "黑客泄露Visa、万事达卡、摩根大通客户数据，源头为第三方服务商遭攻击",
+          "url": "https://www.freebuf.com/articles/database/513719.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-20T12:10:05.245Z"
+        },
+        {
+          "title": "安全团队应淘汰虚荣型安全仪表盘，聚焦风险处置实效",
+          "url": "https://www.freebuf.com/articles/es/513720.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-20T12:10:05.245Z"
+        },
+        {
+          "title": "欧盟委员会HR系统遭网络攻击，攻击者使用开源AI工具ARTEX",
+          "url": "https://www.freebuf.com/news/513673.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-20T12:10:05.245Z"
+        },
+        {
           "title": "phpAfterShell漏洞详解，攻击者可利用PHP会话缺陷执行代码",
           "url": "https://www.freebuf.com/articles/web/513624.html",
           "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
+          "publishedAt": "2026-11-20T12:10:05.245Z"
         },
         {
           "title": "VMware vCenter曝出9.8分严重漏洞，网络攻击者可绕过认证",
           "url": "https://www.freebuf.com/news/513614.html",
           "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
+          "publishedAt": "2026-11-20T12:10:05.245Z"
         },
         {
           "title": "FreeBuf早报 | NGINX HTTP/2曝出两个严重漏洞；员工自建AI Agent继承账号访问权限",
           "url": "https://www.freebuf.com/news/513552.html",
           "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
+          "publishedAt": "2026-11-20T12:10:05.245Z"
+        },
+        {
+          "title": "nginx2shell?面对这些2shell漏洞我想说",
+          "url": "https://www.freebuf.com/articles/vuls/513773.html",
+          "source": "FreeBuf",
+          "publishedAt": "2026-11-20T12:10:05.245Z"
         },
         {
           "title": "微软官方Python Agent框架遭供应链投毒，PyPI恶意版本窃取云与CI/CD凭证",
           "url": "https://www.freebuf.com/articles/development/513582.html",
           "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
+          "publishedAt": "2026-11-20T12:10:05.245Z"
         },
         {
           "title": "企业AI安全管理建设实战：从攻击面认知到落地治理",
           "url": "https://www.freebuf.com/articles/ai-security/513465.html",
           "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
+          "publishedAt": "2026-11-20T12:10:05.245Z"
         },
         {
           "title": "BackBox Linux 10正式发布，新增渗透工具并适配Ubuntu 26.04",
           "url": "https://www.freebuf.com/news/513577.html",
           "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
-        },
-        {
-          "title": "AI发现nginx五个高危漏洞，链式利用可提权至root",
-          "url": "https://www.freebuf.com/news/513544.html",
-          "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
-        },
-        {
-          "title": "漏洞管理存在方向偏差，网络安全行业仍在解决错误问题",
-          "url": "https://www.freebuf.com/articles/es/513548.html",
-          "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
-        },
-        {
-          "title": "AuditTeam勒索团伙伪装安全审计人员，利用杀软驱动终止EDR进程",
-          "url": "https://www.freebuf.com/news/513506.html",
-          "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
-        },
-        {
-          "title": "员工自建AI Agent继承账号访问权限，使用行为缺乏有效监管",
-          "url": "https://www.freebuf.com/articles/ai-security/513505.html",
-          "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
-        },
-        {
-          "title": "攻击者滥用CyberPower UPS软件，执行SYSTEM命令转储活动目录数据",
-          "url": "https://www.freebuf.com/news/513488.html",
-          "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
-        },
-        {
-          "title": "NIST证实量子位置验证技术可行，可阻断远程黑客入侵",
-          "url": "https://www.freebuf.com/articles/513434.html",
-          "source": "FreeBuf",
-          "publishedAt": "2026-11-20T05:02:54.454Z"
+          "publishedAt": "2026-11-20T12:10:05.245Z"
         }
       ]
     },
@@ -457,14 +457,26 @@
     },
     "chemical": {
       "name": "化工",
-      "count": 1,
+      "count": 3,
       "degraded": false,
       "items": [
         {
-          "title": "【风口研报·记者传真】合成碱产能开始出清 业内预计：纯碱行业或将迎来小周期，这一品类将持续受益",
-          "url": "https://www.cls.cn/detail/2539920",
+          "title": "10余家A股上市公司盘后披露超2亿元回购或增持计划公告 荣盛石化控股股东拟增持10亿-20亿元股份",
+          "url": "https://www.cls.cn/detail/2540582",
           "source": "财联社",
-          "publishedAt": "2026-11-20T06:13:32.811Z"
+          "publishedAt": "2026-11-20T15:45:27.993Z"
+        },
+        {
+          "title": "美国财长贝森特：昨晚通过霍尔木兹海峡的原油量是冲突爆发以来最多的。",
+          "url": "https://flash.jin10.com/detail/20261120233228747800",
+          "source": "金十数据",
+          "publishedAt": "2026-11-20T15:34:39.660Z"
+        },
+        {
+          "title": "分享 构建速度可视化工具 - What The Fork",
+          "url": "https://www.v2ex.com/t/1258575",
+          "source": "V2EX",
+          "publishedAt": "2026-11-20T07:44:16.000Z"
         }
       ]
     }
